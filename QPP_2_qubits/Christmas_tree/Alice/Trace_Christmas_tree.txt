@@ -1,0 +1,1422 @@
+
+Set n, possible number of quantum states = 2**num_of_qubits: 4
+
+backend = AerSimulator(method='statevector')
+
+parameters - Secret key file name: Secret_key_2-qubits_Christmas_tree.txt
+
+parameters - Secret key retrieved from file:  1010001100101100111001110011111011000100011000100100101010101001100010110111110110010001010010011001010000011001100101010111010101011001011001101010100000000101011111100001010111111110000001011110101100111101000011011011101011010011101001010011111111011010111101000111001000011011110010010010101111000111010001100100110101110110000111100111101111111010110110110110101011111111111111001001000110111000110011111110000001011100101000110011110110010001
+
+parameters - Set bits_in_block = num_of_bits / num_of_perm_in_pad: 8
+
+parameters - Length of key chunks (bits_in_block/num_of_qubits): 4
+QPP_param_file: QPP_param.json
+plaintext_file: Christmas_tree.png
+trace: 1
+job_trigger: 100
+print_trigger: 100
+draw_circuit: True
+do_sampler: True
+version: V0
+
+service: None
+backend: None
+opt_level, optimisation level for transpile: 1
+resilience_level: 1
+
+None
+
+n, possible number of quantum states: 4
+num_of_bits, classical key length (bit): 448
+bits_in_block: 8
+num_of_qubits: 2
+num_of_perm_in_pad, number of permutations gates in pad: 56
+pad_selection_key_size: 6
+file_to_bitstring - Plaintext file Christmas_tree.png is an image saved in the Portable Network Graphic (PNG) format
+
+file_to_bitstring - Length of image in bytes: 12758
+
+file_to_bitstring - First 100 bytes
+b'\x89PNG\r\n\x1a\n\x00\x00\x00\rIHDR\x00\x00\x02Q\x00\x00\x02K\x08\x03\x00\x00\x00\xf0\xef3\x11\x00\x00\x02\xdfPLTE\xff\xff\xff\xef\xef\xef\x00\x00\x00\x00\x06\x00\x00\t\x00\x00\x13\x00\x00\x19\x00\x00\x1c\x00\x00&\x00\x00/\x00\x009\x00\x00B\x00\x00L\x00\x00O\x00\x00R\x00\x00V\x00\x00Y\x00\x00_\x00\x00f\x00\x00i'
+
+file_to_bitstring - Last 100 bytes
+b'\xff\xb2\xa0\xa3*\x94\x04\xec\xa9U\xad\t\xfa\xf3\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00Z\x82\xff\x0fV\xbds5\xf8w\xd8\xa9\x00\x00\x00\x00IEND\xaeB`\x82'
+
+file_to_bitstring - First 192 bits in message, shown grouped by 8 bits
+10001001 01010000 01001110 01000111 00001101 00001010 00011010 00001010 00000000 00000000 00000000 00001101 01001001 01001000 01000100 01010010 00000000 00000000 00000010 01010001 00000000 000
+
+file_to_bitstring - Last 192 bits in message, shown grouped by 8 bits
+111 00001111 01010110 10111101 01110011 00110101 11111000 01110111 11011000 10101001 00000000 00000000 00000000 00000000 01001001 01000101 01001110 01000100 10101110 01000010 01100000 10000010
+
+permutation_pad
+
+permutation pad - Permutation number: 0, Depth of quantum circuit: 1
+
+permutation_pad - permutation number: 0, dictionary:
+{0: '01', 1: '10', 2: '00', 3: '11'}
+permutation pad - Elapsed time: 0:00:00.675013
+
+permutation pad - Permutation number: 1, Depth of quantum circuit: 1
+
+permutation_pad - permutation number: 1, dictionary:
+{0: '01', 1: '10', 2: '11', 3: '00'}
+permutation pad - Elapsed time: 0:00:00.848871
+
+permutation pad - Permutation number: 2, Depth of quantum circuit: 1
+
+permutation_pad - permutation number: 2, dictionary:
+{0: '00', 1: '01', 2: '10', 3: '11'}
+permutation pad - Elapsed time: 0:00:00.961272
+
+permutation pad - Permutation number: 3, Depth of quantum circuit: 1
+
+permutation_pad - permutation number: 3, dictionary:
+{0: '00', 1: '11', 2: '10', 3: '01'}
+permutation pad - Elapsed time: 0:00:01.223379
+
+permutation pad - Permutation number: 4, Depth of quantum circuit: 1
+
+permutation_pad - permutation number: 4, dictionary:
+{0: '11', 1: '10', 2: '00', 3: '01'}
+permutation pad - Elapsed time: 0:00:01.356311
+
+permutation pad - Permutation number: 5, Depth of quantum circuit: 1
+
+permutation_pad - permutation number: 5, dictionary:
+{0: '01', 1: '10', 2: '11', 3: '00'}
+permutation pad - Elapsed time: 0:00:01.502127
+
+permutation pad - Permutation number: 6, Depth of quantum circuit: 1
+
+permutation_pad - permutation number: 6, dictionary:
+{0: '01', 1: '00', 2: '11', 3: '10'}
+permutation pad - Elapsed time: 0:00:01.603635
+
+permutation pad - Permutation number: 7, Depth of quantum circuit: 1
+
+permutation_pad - permutation number: 7, dictionary:
+{0: '00', 1: '11', 2: '01', 3: '10'}
+permutation pad - Elapsed time: 0:00:01.704719
+
+permutation pad - Permutation number: 8, Depth of quantum circuit: 1
+
+permutation_pad - permutation number: 8, dictionary:
+{0: '01', 1: '00', 2: '10', 3: '11'}
+permutation pad - Elapsed time: 0:00:01.815827
+
+permutation pad - Permutation number: 9, Depth of quantum circuit: 1
+
+permutation_pad - permutation number: 9, dictionary:
+{0: '00', 1: '10', 2: '01', 3: '11'}
+permutation pad - Elapsed time: 0:00:01.946155
+
+permutation pad - Permutation number: 10, Depth of quantum circuit: 1
+
+permutation_pad - permutation number: 10, dictionary:
+{0: '10', 1: '11', 2: '00', 3: '01'}
+permutation pad - Elapsed time: 0:00:02.075243
+
+permutation pad - Permutation number: 11, Depth of quantum circuit: 1
+
+permutation_pad - permutation number: 11, dictionary:
+{0: '01', 1: '11', 2: '10', 3: '00'}
+permutation pad - Elapsed time: 0:00:02.205285
+
+permutation pad - Permutation number: 12, Depth of quantum circuit: 1
+
+permutation_pad - permutation number: 12, dictionary:
+{0: '11', 1: '10', 2: '01', 3: '00'}
+permutation pad - Elapsed time: 0:00:02.320623
+
+permutation pad - Permutation number: 13, Depth of quantum circuit: 1
+
+permutation_pad - permutation number: 13, dictionary:
+{0: '00', 1: '11', 2: '10', 3: '01'}
+permutation pad - Elapsed time: 0:00:02.425722
+
+permutation pad - Permutation number: 14, Depth of quantum circuit: 1
+
+permutation_pad - permutation number: 14, dictionary:
+{0: '00', 1: '11', 2: '01', 3: '10'}
+permutation pad - Elapsed time: 0:00:02.572046
+
+permutation pad - Permutation number: 15, Depth of quantum circuit: 1
+
+permutation_pad - permutation number: 15, dictionary:
+{0: '00', 1: '01', 2: '11', 3: '10'}
+permutation pad - Elapsed time: 0:00:02.727968
+
+permutation pad - Permutation number: 16, Depth of quantum circuit: 1
+
+permutation_pad - permutation number: 16, dictionary:
+{0: '00', 1: '11', 2: '10', 3: '01'}
+permutation pad - Elapsed time: 0:00:02.876224
+
+permutation pad - Permutation number: 17, Depth of quantum circuit: 1
+
+permutation_pad - permutation number: 17, dictionary:
+{0: '00', 1: '01', 2: '11', 3: '10'}
+permutation pad - Elapsed time: 0:00:03.001228
+
+permutation pad - Permutation number: 18, Depth of quantum circuit: 1
+
+permutation_pad - permutation number: 18, dictionary:
+{0: '11', 1: '10', 2: '01', 3: '00'}
+permutation pad - Elapsed time: 0:00:03.151490
+
+permutation pad - Permutation number: 19, Depth of quantum circuit: 1
+
+permutation_pad - permutation number: 19, dictionary:
+{0: '01', 1: '11', 2: '00', 3: '10'}
+permutation pad - Elapsed time: 0:00:03.293395
+
+permutation pad - Permutation number: 20, Depth of quantum circuit: 1
+
+permutation_pad - permutation number: 20, dictionary:
+{0: '00', 1: '11', 2: '10', 3: '01'}
+permutation pad - Elapsed time: 0:00:03.427585
+
+permutation pad - Permutation number: 21, Depth of quantum circuit: 1
+
+permutation_pad - permutation number: 21, dictionary:
+{0: '00', 1: '11', 2: '01', 3: '10'}
+permutation pad - Elapsed time: 0:00:03.511375
+
+permutation pad - Permutation number: 22, Depth of quantum circuit: 1
+
+permutation_pad - permutation number: 22, dictionary:
+{0: '00', 1: '11', 2: '10', 3: '01'}
+permutation pad - Elapsed time: 0:00:03.591286
+
+permutation pad - Permutation number: 23, Depth of quantum circuit: 1
+
+permutation_pad - permutation number: 23, dictionary:
+{0: '01', 1: '11', 2: '00', 3: '10'}
+permutation pad - Elapsed time: 0:00:03.716467
+
+permutation pad - Permutation number: 24, Depth of quantum circuit: 1
+
+permutation_pad - permutation number: 24, dictionary:
+{0: '00', 1: '10', 2: '01', 3: '11'}
+permutation pad - Elapsed time: 0:00:04.023406
+
+permutation pad - Permutation number: 25, Depth of quantum circuit: 1
+
+permutation_pad - permutation number: 25, dictionary:
+{0: '00', 1: '10', 2: '01', 3: '11'}
+permutation pad - Elapsed time: 0:00:04.139288
+
+permutation pad - Permutation number: 26, Depth of quantum circuit: 1
+
+permutation_pad - permutation number: 26, dictionary:
+{0: '01', 1: '10', 2: '11', 3: '00'}
+permutation pad - Elapsed time: 0:00:04.230410
+
+permutation pad - Permutation number: 27, Depth of quantum circuit: 1
+
+permutation_pad - permutation number: 27, dictionary:
+{0: '00', 1: '11', 2: '01', 3: '10'}
+permutation pad - Elapsed time: 0:00:04.331625
+
+permutation pad - Permutation number: 28, Depth of quantum circuit: 1
+
+permutation_pad - permutation number: 28, dictionary:
+{0: '10', 1: '01', 2: '00', 3: '11'}
+permutation pad - Elapsed time: 0:00:04.430223
+
+permutation pad - Permutation number: 29, Depth of quantum circuit: 1
+
+permutation_pad - permutation number: 29, dictionary:
+{0: '00', 1: '11', 2: '10', 3: '01'}
+permutation pad - Elapsed time: 0:00:04.577207
+
+permutation pad - Permutation number: 30, Depth of quantum circuit: 1
+
+permutation_pad - permutation number: 30, dictionary:
+{0: '00', 1: '11', 2: '01', 3: '10'}
+permutation pad - Elapsed time: 0:00:04.729606
+
+permutation pad - Permutation number: 31, Depth of quantum circuit: 1
+
+permutation_pad - permutation number: 31, dictionary:
+{0: '00', 1: '01', 2: '11', 3: '10'}
+permutation pad - Elapsed time: 0:00:04.849874
+
+permutation pad - Permutation number: 32, Depth of quantum circuit: 1
+
+permutation_pad - permutation number: 32, dictionary:
+{0: '01', 1: '10', 2: '11', 3: '00'}
+permutation pad - Elapsed time: 0:00:04.988064
+
+permutation pad - Permutation number: 33, Depth of quantum circuit: 1
+
+permutation_pad - permutation number: 33, dictionary:
+{0: '10', 1: '11', 2: '01', 3: '00'}
+permutation pad - Elapsed time: 0:00:05.129831
+
+permutation pad - Permutation number: 34, Depth of quantum circuit: 1
+
+permutation_pad - permutation number: 34, dictionary:
+{0: '00', 1: '01', 2: '10', 3: '11'}
+permutation pad - Elapsed time: 0:00:05.289198
+
+permutation pad - Permutation number: 35, Depth of quantum circuit: 1
+
+permutation_pad - permutation number: 35, dictionary:
+{0: '01', 1: '11', 2: '10', 3: '00'}
+permutation pad - Elapsed time: 0:00:05.412480
+
+permutation pad - Permutation number: 36, Depth of quantum circuit: 1
+
+permutation_pad - permutation number: 36, dictionary:
+{0: '00', 1: '10', 2: '01', 3: '11'}
+permutation pad - Elapsed time: 0:00:05.557264
+
+permutation pad - Permutation number: 37, Depth of quantum circuit: 1
+
+permutation_pad - permutation number: 37, dictionary:
+{0: '01', 1: '10', 2: '00', 3: '11'}
+permutation pad - Elapsed time: 0:00:05.712888
+
+permutation pad - Permutation number: 38, Depth of quantum circuit: 1
+
+permutation_pad - permutation number: 38, dictionary:
+{0: '01', 1: '10', 2: '11', 3: '00'}
+permutation pad - Elapsed time: 0:00:05.862012
+
+permutation pad - Permutation number: 39, Depth of quantum circuit: 1
+
+permutation_pad - permutation number: 39, dictionary:
+{0: '01', 1: '10', 2: '11', 3: '00'}
+permutation pad - Elapsed time: 0:00:06.009231
+
+permutation pad - Permutation number: 40, Depth of quantum circuit: 1
+
+permutation_pad - permutation number: 40, dictionary:
+{0: '00', 1: '10', 2: '01', 3: '11'}
+permutation pad - Elapsed time: 0:00:06.164326
+
+permutation pad - Permutation number: 41, Depth of quantum circuit: 1
+
+permutation_pad - permutation number: 41, dictionary:
+{0: '00', 1: '01', 2: '10', 3: '11'}
+permutation pad - Elapsed time: 0:00:06.301632
+
+permutation pad - Permutation number: 42, Depth of quantum circuit: 1
+
+permutation_pad - permutation number: 42, dictionary:
+{0: '00', 1: '11', 2: '10', 3: '01'}
+permutation pad - Elapsed time: 0:00:06.377201
+
+permutation pad - Permutation number: 43, Depth of quantum circuit: 1
+
+permutation_pad - permutation number: 43, dictionary:
+{0: '00', 1: '11', 2: '01', 3: '10'}
+permutation pad - Elapsed time: 0:00:06.457908
+
+permutation pad - Permutation number: 44, Depth of quantum circuit: 1
+
+permutation_pad - permutation number: 44, dictionary:
+{0: '00', 1: '01', 2: '10', 3: '11'}
+permutation pad - Elapsed time: 0:00:06.639247
+
+permutation pad - Permutation number: 45, Depth of quantum circuit: 1
+
+permutation_pad - permutation number: 45, dictionary:
+{0: '00', 1: '10', 2: '11', 3: '01'}
+permutation pad - Elapsed time: 0:00:06.788647
+
+permutation pad - Permutation number: 46, Depth of quantum circuit: 1
+
+permutation_pad - permutation number: 46, dictionary:
+{0: '00', 1: '11', 2: '01', 3: '10'}
+permutation pad - Elapsed time: 0:00:06.941405
+
+permutation pad - Permutation number: 47, Depth of quantum circuit: 1
+
+permutation_pad - permutation number: 47, dictionary:
+{0: '10', 1: '11', 2: '01', 3: '00'}
+permutation pad - Elapsed time: 0:00:07.104324
+
+permutation pad - Permutation number: 48, Depth of quantum circuit: 1
+
+permutation_pad - permutation number: 48, dictionary:
+{0: '10', 1: '11', 2: '00', 3: '01'}
+permutation pad - Elapsed time: 0:00:07.250180
+
+permutation pad - Permutation number: 49, Depth of quantum circuit: 1
+
+permutation_pad - permutation number: 49, dictionary:
+{0: '01', 1: '11', 2: '10', 3: '00'}
+permutation pad - Elapsed time: 0:00:07.565645
+
+permutation pad - Permutation number: 50, Depth of quantum circuit: 1
+
+permutation_pad - permutation number: 50, dictionary:
+{0: '01', 1: '00', 2: '11', 3: '10'}
+permutation pad - Elapsed time: 0:00:07.668611
+
+permutation pad - Permutation number: 51, Depth of quantum circuit: 1
+
+permutation_pad - permutation number: 51, dictionary:
+{0: '11', 1: '10', 2: '00', 3: '01'}
+permutation pad - Elapsed time: 0:00:07.773372
+
+permutation pad - Permutation number: 52, Depth of quantum circuit: 1
+
+permutation_pad - permutation number: 52, dictionary:
+{0: '10', 1: '01', 2: '11', 3: '00'}
+permutation pad - Elapsed time: 0:00:07.881363
+
+permutation pad - Permutation number: 53, Depth of quantum circuit: 1
+
+permutation_pad - permutation number: 53, dictionary:
+{0: '01', 1: '10', 2: '00', 3: '11'}
+permutation pad - Elapsed time: 0:00:08.022635
+
+permutation pad - Permutation number: 54, Depth of quantum circuit: 1
+
+permutation_pad - permutation number: 54, dictionary:
+{0: '00', 1: '10', 2: '01', 3: '11'}
+permutation pad - Elapsed time: 0:00:08.176724
+
+permutation pad - Permutation number: 55, Depth of quantum circuit: 1
+
+permutation_pad - permutation number: 55, dictionary:
+{0: '10', 1: '11', 2: '00', 3: '01'}
+permutation pad - Elapsed time: 0:00:08.319792
+permutation pad - Length of Permutation_Pad: 56
+
+encrypt - Length of message in bits:  102064
+encrypt - Length of randomized message:  102064
+encrypt - Length of message chunks: 51032
+encrypt - Remainder of dividing (Length of message chunks) by (Job trigger): 32
+
+encrypt - x : 99,  Permutation_Pad[42], State vector: 11, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.000158
+encrypt - x : 199,  Permutation_Pad[4], State vector: 00, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.001828
+encrypt - x : 299,  Permutation_Pad[1], State vector: 00, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.001886
+encrypt - x : 399,  Permutation_Pad[42], State vector: 11, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.001928
+encrypt - x : 499,  Permutation_Pad[4], State vector: 00, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.001965
+encrypt - x : 599,  Permutation_Pad[1], State vector: 10, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.002001
+encrypt - x : 699,  Permutation_Pad[42], State vector: 01, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.002037
+encrypt - x : 799,  Permutation_Pad[4], State vector: 10, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.002072
+encrypt - x : 899,  Permutation_Pad[1], State vector: 10, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.002115
+encrypt - x : 999,  Permutation_Pad[42], State vector: 10, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.002154
+encrypt - x : 1099,  Permutation_Pad[4], State vector: 11, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.002189
+encrypt - x : 1199,  Permutation_Pad[1], State vector: 10, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.002224
+encrypt - x : 1299,  Permutation_Pad[42], State vector: 01, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.002258
+encrypt - x : 1399,  Permutation_Pad[4], State vector: 01, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.002292
+encrypt - x : 1499,  Permutation_Pad[1], State vector: 01, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.002326
+encrypt - x : 1599,  Permutation_Pad[42], State vector: 00, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.002360
+encrypt - x : 1699,  Permutation_Pad[4], State vector: 00, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.002394
+encrypt - x : 1799,  Permutation_Pad[1], State vector: 10, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.002427
+encrypt - x : 1899,  Permutation_Pad[42], State vector: 01, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.002461
+encrypt - x : 1999,  Permutation_Pad[4], State vector: 00, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.002495
+encrypt - x : 2099,  Permutation_Pad[1], State vector: 01, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.002530
+encrypt - x : 2199,  Permutation_Pad[42], State vector: 10, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.002564
+encrypt - x : 2299,  Permutation_Pad[4], State vector: 01, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.002597
+encrypt - x : 2399,  Permutation_Pad[1], State vector: 10, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.002630
+encrypt - x : 2499,  Permutation_Pad[42], State vector: 00, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.002664
+encrypt - x : 2599,  Permutation_Pad[4], State vector: 10, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.002697
+encrypt - x : 2699,  Permutation_Pad[1], State vector: 00, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.002730
+encrypt - x : 2799,  Permutation_Pad[42], State vector: 10, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.002784
+encrypt - x : 2899,  Permutation_Pad[4], State vector: 11, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.002831
+encrypt - x : 2999,  Permutation_Pad[1], State vector: 10, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.002870
+encrypt - x : 3099,  Permutation_Pad[42], State vector: 00, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.002906
+encrypt - x : 3199,  Permutation_Pad[4], State vector: 01, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.002942
+encrypt - x : 3299,  Permutation_Pad[1], State vector: 11, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.002978
+encrypt - x : 3399,  Permutation_Pad[42], State vector: 00, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.003014
+encrypt - x : 3499,  Permutation_Pad[4], State vector: 01, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.003050
+encrypt - x : 3599,  Permutation_Pad[1], State vector: 00, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.003086
+encrypt - x : 3699,  Permutation_Pad[42], State vector: 11, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.003120
+encrypt - x : 3799,  Permutation_Pad[4], State vector: 11, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.003181
+encrypt - x : 3899,  Permutation_Pad[1], State vector: 10, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.003224
+encrypt - x : 3999,  Permutation_Pad[42], State vector: 00, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.003259
+encrypt - x : 4099,  Permutation_Pad[4], State vector: 10, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.003296
+encrypt - x : 4199,  Permutation_Pad[1], State vector: 10, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.003330
+encrypt - x : 4299,  Permutation_Pad[42], State vector: 00, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.003364
+encrypt - x : 4399,  Permutation_Pad[4], State vector: 00, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.003399
+encrypt - x : 4499,  Permutation_Pad[1], State vector: 00, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.003437
+encrypt - x : 4599,  Permutation_Pad[42], State vector: 01, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.003474
+encrypt - x : 4699,  Permutation_Pad[4], State vector: 01, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.003509
+encrypt - x : 4799,  Permutation_Pad[1], State vector: 01, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.003545
+encrypt - x : 4899,  Permutation_Pad[42], State vector: 11, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.003581
+encrypt - x : 4999,  Permutation_Pad[4], State vector: 01, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.003615
+encrypt - x : 5099,  Permutation_Pad[1], State vector: 11, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.003650
+encrypt - x : 5199,  Permutation_Pad[42], State vector: 00, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.003687
+encrypt - x : 5299,  Permutation_Pad[4], State vector: 11, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.003722
+encrypt - x : 5399,  Permutation_Pad[1], State vector: 10, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.003758
+encrypt - x : 5499,  Permutation_Pad[42], State vector: 01, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.003794
+encrypt - x : 5599,  Permutation_Pad[4], State vector: 01, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.003831
+encrypt - x : 5699,  Permutation_Pad[1], State vector: 01, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.003867
+encrypt - x : 5799,  Permutation_Pad[42], State vector: 11, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.003904
+encrypt - x : 5899,  Permutation_Pad[4], State vector: 01, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.003940
+encrypt - x : 5999,  Permutation_Pad[1], State vector: 11, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.003976
+encrypt - x : 6099,  Permutation_Pad[42], State vector: 01, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.004012
+encrypt - x : 6199,  Permutation_Pad[4], State vector: 10, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.004048
+encrypt - x : 6299,  Permutation_Pad[1], State vector: 10, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.004082
+encrypt - x : 6399,  Permutation_Pad[42], State vector: 10, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.004121
+encrypt - x : 6499,  Permutation_Pad[4], State vector: 10, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.004159
+encrypt - x : 6599,  Permutation_Pad[1], State vector: 11, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.004196
+encrypt - x : 6699,  Permutation_Pad[42], State vector: 11, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.004243
+encrypt - x : 6799,  Permutation_Pad[4], State vector: 10, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.004280
+encrypt - x : 6899,  Permutation_Pad[1], State vector: 00, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.004315
+encrypt - x : 6999,  Permutation_Pad[42], State vector: 00, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.004468
+encrypt - x : 7099,  Permutation_Pad[4], State vector: 10, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.004513
+encrypt - x : 7199,  Permutation_Pad[1], State vector: 00, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.004552
+encrypt - x : 7299,  Permutation_Pad[42], State vector: 11, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.004591
+encrypt - x : 7399,  Permutation_Pad[4], State vector: 01, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.004630
+encrypt - x : 7499,  Permutation_Pad[1], State vector: 11, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.004668
+encrypt - x : 7599,  Permutation_Pad[42], State vector: 01, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.004707
+encrypt - x : 7699,  Permutation_Pad[4], State vector: 11, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.004745
+encrypt - x : 7799,  Permutation_Pad[1], State vector: 10, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.004805
+encrypt - x : 7899,  Permutation_Pad[42], State vector: 10, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.004858
+encrypt - x : 7999,  Permutation_Pad[4], State vector: 11, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.004901
+encrypt - x : 8099,  Permutation_Pad[1], State vector: 00, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.004943
+encrypt - x : 8199,  Permutation_Pad[42], State vector: 01, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.004983
+encrypt - x : 8299,  Permutation_Pad[4], State vector: 10, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.005024
+encrypt - x : 8399,  Permutation_Pad[1], State vector: 01, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.005061
+encrypt - x : 8499,  Permutation_Pad[42], State vector: 11, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.005098
+encrypt - x : 8599,  Permutation_Pad[4], State vector: 01, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.005136
+encrypt - x : 8699,  Permutation_Pad[1], State vector: 11, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.005174
+encrypt - x : 8799,  Permutation_Pad[42], State vector: 11, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.005210
+encrypt - x : 8899,  Permutation_Pad[4], State vector: 11, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.005248
+encrypt - x : 8999,  Permutation_Pad[1], State vector: 11, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.005286
+encrypt - x : 9099,  Permutation_Pad[42], State vector: 01, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.005324
+encrypt - x : 9199,  Permutation_Pad[4], State vector: 11, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.005360
+encrypt - x : 9299,  Permutation_Pad[1], State vector: 00, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.005398
+encrypt - x : 9399,  Permutation_Pad[42], State vector: 10, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.005434
+encrypt - x : 9499,  Permutation_Pad[4], State vector: 00, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.005471
+encrypt - x : 9599,  Permutation_Pad[1], State vector: 10, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.005507
+encrypt - x : 9699,  Permutation_Pad[42], State vector: 11, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.005546
+encrypt - x : 9799,  Permutation_Pad[4], State vector: 01, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.005582
+encrypt - x : 9899,  Permutation_Pad[1], State vector: 11, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.005619
+encrypt - x : 9999,  Permutation_Pad[42], State vector: 01, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.005655
+encrypt - x : 10099,  Permutation_Pad[4], State vector: 01, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.005691
+encrypt - x : 10199,  Permutation_Pad[1], State vector: 01, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.005727
+encrypt - x : 10299,  Permutation_Pad[42], State vector: 10, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.005763
+encrypt - x : 10399,  Permutation_Pad[4], State vector: 11, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.005804
+encrypt - x : 10499,  Permutation_Pad[1], State vector: 11, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.005841
+encrypt - x : 10599,  Permutation_Pad[42], State vector: 11, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.005894
+encrypt - x : 10699,  Permutation_Pad[4], State vector: 01, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.005950
+encrypt - x : 10799,  Permutation_Pad[1], State vector: 11, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.005994
+encrypt - x : 10899,  Permutation_Pad[42], State vector: 00, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.006037
+encrypt - x : 10999,  Permutation_Pad[4], State vector: 01, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.006079
+encrypt - x : 11099,  Permutation_Pad[1], State vector: 00, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.006120
+encrypt - x : 11199,  Permutation_Pad[42], State vector: 10, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.006163
+encrypt - x : 11299,  Permutation_Pad[4], State vector: 01, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.006207
+encrypt - x : 11399,  Permutation_Pad[1], State vector: 01, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.006249
+encrypt - x : 11499,  Permutation_Pad[42], State vector: 10, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.006292
+encrypt - x : 11599,  Permutation_Pad[4], State vector: 01, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.006338
+encrypt - x : 11699,  Permutation_Pad[1], State vector: 10, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.006381
+encrypt - x : 11799,  Permutation_Pad[42], State vector: 01, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.006425
+encrypt - x : 11899,  Permutation_Pad[4], State vector: 00, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.006467
+encrypt - x : 11999,  Permutation_Pad[1], State vector: 11, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.006510
+encrypt - x : 12099,  Permutation_Pad[42], State vector: 00, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.006552
+encrypt - x : 12199,  Permutation_Pad[4], State vector: 10, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.006598
+encrypt - x : 12299,  Permutation_Pad[1], State vector: 11, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.006642
+encrypt - x : 12399,  Permutation_Pad[42], State vector: 10, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.006683
+encrypt - x : 12499,  Permutation_Pad[4], State vector: 11, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.006723
+encrypt - x : 12599,  Permutation_Pad[1], State vector: 00, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.006763
+encrypt - x : 12699,  Permutation_Pad[42], State vector: 11, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.006829
+encrypt - x : 12799,  Permutation_Pad[4], State vector: 01, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.006886
+encrypt - x : 12899,  Permutation_Pad[1], State vector: 00, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.006987
+encrypt - x : 12999,  Permutation_Pad[42], State vector: 01, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.007036
+encrypt - x : 13099,  Permutation_Pad[4], State vector: 11, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.007081
+encrypt - x : 13199,  Permutation_Pad[1], State vector: 10, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.007126
+encrypt - x : 13299,  Permutation_Pad[42], State vector: 10, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.007170
+encrypt - x : 13399,  Permutation_Pad[4], State vector: 11, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.007213
+encrypt - x : 13499,  Permutation_Pad[1], State vector: 01, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.007258
+encrypt - x : 13599,  Permutation_Pad[42], State vector: 00, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.007301
+encrypt - x : 13699,  Permutation_Pad[4], State vector: 10, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.007345
+encrypt - x : 13799,  Permutation_Pad[1], State vector: 00, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.007388
+encrypt - x : 13899,  Permutation_Pad[42], State vector: 00, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.007431
+encrypt - x : 13999,  Permutation_Pad[4], State vector: 00, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.007523
+encrypt - x : 14099,  Permutation_Pad[1], State vector: 01, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.007568
+encrypt - x : 14199,  Permutation_Pad[42], State vector: 00, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.007610
+encrypt - x : 14299,  Permutation_Pad[4], State vector: 01, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.007653
+encrypt - x : 14399,  Permutation_Pad[1], State vector: 11, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.007694
+encrypt - x : 14499,  Permutation_Pad[42], State vector: 00, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.007736
+encrypt - x : 14599,  Permutation_Pad[4], State vector: 01, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.007778
+encrypt - x : 14699,  Permutation_Pad[1], State vector: 11, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.007820
+encrypt - x : 14799,  Permutation_Pad[42], State vector: 00, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.007862
+encrypt - x : 14899,  Permutation_Pad[4], State vector: 01, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.007903
+encrypt - x : 14999,  Permutation_Pad[1], State vector: 01, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.007944
+encrypt - x : 15099,  Permutation_Pad[42], State vector: 01, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.007986
+encrypt - x : 15199,  Permutation_Pad[4], State vector: 01, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.008027
+encrypt - x : 15299,  Permutation_Pad[1], State vector: 11, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.008068
+encrypt - x : 15399,  Permutation_Pad[42], State vector: 10, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.008109
+encrypt - x : 15499,  Permutation_Pad[4], State vector: 10, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.008150
+encrypt - x : 15599,  Permutation_Pad[1], State vector: 00, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.008191
+encrypt - x : 15699,  Permutation_Pad[42], State vector: 10, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.008231
+encrypt - x : 15799,  Permutation_Pad[4], State vector: 01, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.008272
+encrypt - x : 15899,  Permutation_Pad[1], State vector: 10, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.008313
+encrypt - x : 15999,  Permutation_Pad[42], State vector: 11, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.008353
+encrypt - x : 16099,  Permutation_Pad[4], State vector: 00, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.008394
+encrypt - x : 16199,  Permutation_Pad[1], State vector: 00, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.008435
+encrypt - x : 16299,  Permutation_Pad[42], State vector: 10, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.008475
+encrypt - x : 16399,  Permutation_Pad[4], State vector: 11, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.008515
+encrypt - x : 16499,  Permutation_Pad[1], State vector: 11, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.008555
+encrypt - x : 16599,  Permutation_Pad[42], State vector: 01, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.008595
+encrypt - x : 16699,  Permutation_Pad[4], State vector: 10, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.008635
+encrypt - x : 16799,  Permutation_Pad[1], State vector: 00, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.008675
+encrypt - x : 16899,  Permutation_Pad[42], State vector: 01, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.008715
+encrypt - x : 16999,  Permutation_Pad[4], State vector: 11, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.008755
+encrypt - x : 17099,  Permutation_Pad[1], State vector: 10, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.008796
+encrypt - x : 17199,  Permutation_Pad[42], State vector: 00, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.008862
+encrypt - x : 17299,  Permutation_Pad[4], State vector: 10, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.008917
+encrypt - x : 17399,  Permutation_Pad[1], State vector: 00, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.008963
+encrypt - x : 17499,  Permutation_Pad[42], State vector: 01, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.009008
+encrypt - x : 17599,  Permutation_Pad[4], State vector: 10, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.009053
+encrypt - x : 17699,  Permutation_Pad[1], State vector: 01, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.009097
+encrypt - x : 17799,  Permutation_Pad[42], State vector: 00, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.009140
+encrypt - x : 17899,  Permutation_Pad[4], State vector: 00, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.009183
+encrypt - x : 17999,  Permutation_Pad[1], State vector: 01, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.009227
+encrypt - x : 18099,  Permutation_Pad[42], State vector: 00, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.013407
+encrypt - x : 18199,  Permutation_Pad[4], State vector: 00, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.013517
+encrypt - x : 18299,  Permutation_Pad[1], State vector: 00, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.013570
+encrypt - x : 18399,  Permutation_Pad[42], State vector: 11, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.013615
+encrypt - x : 18499,  Permutation_Pad[4], State vector: 11, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.013659
+encrypt - x : 18599,  Permutation_Pad[1], State vector: 10, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.013702
+encrypt - x : 18699,  Permutation_Pad[42], State vector: 11, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.013744
+encrypt - x : 18799,  Permutation_Pad[4], State vector: 01, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.013787
+encrypt - x : 18899,  Permutation_Pad[1], State vector: 00, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.013829
+encrypt - x : 18999,  Permutation_Pad[42], State vector: 01, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.013871
+encrypt - x : 19099,  Permutation_Pad[4], State vector: 10, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.013912
+encrypt - x : 19199,  Permutation_Pad[1], State vector: 01, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.013952
+encrypt - x : 19299,  Permutation_Pad[42], State vector: 01, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.013994
+encrypt - x : 19399,  Permutation_Pad[4], State vector: 11, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.014035
+encrypt - x : 19499,  Permutation_Pad[1], State vector: 10, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.014078
+encrypt - x : 19599,  Permutation_Pad[42], State vector: 11, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.014119
+encrypt - x : 19699,  Permutation_Pad[4], State vector: 10, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.014160
+encrypt - x : 19799,  Permutation_Pad[1], State vector: 10, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.014202
+encrypt - x : 19899,  Permutation_Pad[42], State vector: 11, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.014242
+encrypt - x : 19999,  Permutation_Pad[4], State vector: 10, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.014283
+encrypt - x : 20099,  Permutation_Pad[1], State vector: 00, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.014324
+encrypt - x : 20199,  Permutation_Pad[42], State vector: 11, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.014364
+encrypt - x : 20299,  Permutation_Pad[4], State vector: 11, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.014416
+encrypt - x : 20399,  Permutation_Pad[1], State vector: 11, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.014457
+encrypt - x : 20499,  Permutation_Pad[42], State vector: 11, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.014498
+encrypt - x : 20599,  Permutation_Pad[4], State vector: 10, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.014538
+encrypt - x : 20699,  Permutation_Pad[1], State vector: 00, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.014579
+encrypt - x : 20799,  Permutation_Pad[42], State vector: 01, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.014619
+encrypt - x : 20899,  Permutation_Pad[4], State vector: 11, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.014660
+encrypt - x : 20999,  Permutation_Pad[1], State vector: 00, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.014750
+encrypt - x : 21099,  Permutation_Pad[42], State vector: 11, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.014792
+encrypt - x : 21199,  Permutation_Pad[4], State vector: 00, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.014832
+encrypt - x : 21299,  Permutation_Pad[1], State vector: 10, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.014892
+encrypt - x : 21399,  Permutation_Pad[42], State vector: 00, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.014948
+encrypt - x : 21499,  Permutation_Pad[4], State vector: 01, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.014994
+encrypt - x : 21599,  Permutation_Pad[1], State vector: 10, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.015040
+encrypt - x : 21699,  Permutation_Pad[42], State vector: 10, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.015084
+encrypt - x : 21799,  Permutation_Pad[4], State vector: 11, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.015128
+encrypt - x : 21899,  Permutation_Pad[1], State vector: 01, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.015171
+encrypt - x : 21999,  Permutation_Pad[42], State vector: 01, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.015214
+encrypt - x : 22099,  Permutation_Pad[4], State vector: 00, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.015257
+encrypt - x : 22199,  Permutation_Pad[1], State vector: 11, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.015300
+encrypt - x : 22299,  Permutation_Pad[42], State vector: 01, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.015343
+encrypt - x : 22399,  Permutation_Pad[4], State vector: 00, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.015385
+encrypt - x : 22499,  Permutation_Pad[1], State vector: 11, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.015427
+encrypt - x : 22599,  Permutation_Pad[42], State vector: 11, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.015470
+encrypt - x : 22699,  Permutation_Pad[4], State vector: 10, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.015512
+encrypt - x : 22799,  Permutation_Pad[1], State vector: 11, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.015554
+encrypt - x : 22899,  Permutation_Pad[42], State vector: 00, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.015597
+encrypt - x : 22999,  Permutation_Pad[4], State vector: 00, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.015638
+encrypt - x : 23099,  Permutation_Pad[1], State vector: 00, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.015680
+encrypt - x : 23199,  Permutation_Pad[42], State vector: 00, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.015722
+encrypt - x : 23299,  Permutation_Pad[4], State vector: 01, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.015764
+encrypt - x : 23399,  Permutation_Pad[1], State vector: 11, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.015804
+encrypt - x : 23499,  Permutation_Pad[42], State vector: 01, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.015845
+encrypt - x : 23599,  Permutation_Pad[4], State vector: 00, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.015886
+encrypt - x : 23699,  Permutation_Pad[1], State vector: 10, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.015929
+encrypt - x : 23799,  Permutation_Pad[42], State vector: 10, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.015969
+encrypt - x : 23899,  Permutation_Pad[4], State vector: 01, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.016009
+encrypt - x : 23999,  Permutation_Pad[1], State vector: 01, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.016049
+encrypt - x : 24099,  Permutation_Pad[42], State vector: 01, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.016090
+encrypt - x : 24199,  Permutation_Pad[4], State vector: 00, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.016131
+encrypt - x : 24299,  Permutation_Pad[1], State vector: 10, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.016172
+encrypt - x : 24399,  Permutation_Pad[42], State vector: 11, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.016212
+encrypt - x : 24499,  Permutation_Pad[4], State vector: 00, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.016253
+encrypt - x : 24599,  Permutation_Pad[1], State vector: 00, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.016293
+encrypt - x : 24699,  Permutation_Pad[42], State vector: 11, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.016334
+encrypt - x : 24799,  Permutation_Pad[4], State vector: 10, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.016374
+encrypt - x : 24899,  Permutation_Pad[1], State vector: 00, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.016414
+encrypt - x : 24999,  Permutation_Pad[42], State vector: 00, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.016454
+encrypt - x : 25099,  Permutation_Pad[4], State vector: 10, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.016495
+encrypt - x : 25199,  Permutation_Pad[1], State vector: 11, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.016535
+encrypt - x : 25299,  Permutation_Pad[42], State vector: 01, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.016576
+encrypt - x : 25399,  Permutation_Pad[4], State vector: 10, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.016616
+encrypt - x : 25499,  Permutation_Pad[1], State vector: 10, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.016657
+encrypt - x : 25599,  Permutation_Pad[42], State vector: 10, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.019541
+encrypt - x : 25699,  Permutation_Pad[4], State vector: 11, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.019609
+encrypt - x : 25799,  Permutation_Pad[1], State vector: 11, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.019645
+encrypt - x : 25899,  Permutation_Pad[42], State vector: 10, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.019680
+encrypt - x : 25999,  Permutation_Pad[4], State vector: 10, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.019714
+encrypt - x : 26099,  Permutation_Pad[1], State vector: 01, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.019747
+encrypt - x : 26199,  Permutation_Pad[42], State vector: 11, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.019780
+encrypt - x : 26299,  Permutation_Pad[4], State vector: 11, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.019813
+encrypt - x : 26399,  Permutation_Pad[1], State vector: 00, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.019845
+encrypt - x : 26499,  Permutation_Pad[42], State vector: 11, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.019878
+encrypt - x : 26599,  Permutation_Pad[4], State vector: 11, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.019911
+encrypt - x : 26699,  Permutation_Pad[1], State vector: 01, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.019943
+encrypt - x : 26799,  Permutation_Pad[42], State vector: 11, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.019977
+encrypt - x : 26899,  Permutation_Pad[4], State vector: 11, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.020009
+encrypt - x : 26999,  Permutation_Pad[1], State vector: 10, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.020041
+encrypt - x : 27099,  Permutation_Pad[42], State vector: 00, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.020072
+encrypt - x : 27199,  Permutation_Pad[4], State vector: 11, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.020105
+encrypt - x : 27299,  Permutation_Pad[1], State vector: 11, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.020137
+encrypt - x : 27399,  Permutation_Pad[42], State vector: 00, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.020170
+encrypt - x : 27499,  Permutation_Pad[4], State vector: 00, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.020202
+encrypt - x : 27599,  Permutation_Pad[1], State vector: 01, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.020235
+encrypt - x : 27699,  Permutation_Pad[42], State vector: 00, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.020267
+encrypt - x : 27799,  Permutation_Pad[4], State vector: 01, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.020300
+encrypt - x : 27899,  Permutation_Pad[1], State vector: 10, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.020332
+encrypt - x : 27999,  Permutation_Pad[42], State vector: 01, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.020403
+encrypt - x : 28099,  Permutation_Pad[4], State vector: 01, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.020438
+encrypt - x : 28199,  Permutation_Pad[1], State vector: 00, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.020471
+encrypt - x : 28299,  Permutation_Pad[42], State vector: 10, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.020503
+encrypt - x : 28399,  Permutation_Pad[4], State vector: 10, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.020535
+encrypt - x : 28499,  Permutation_Pad[1], State vector: 11, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.020567
+encrypt - x : 28599,  Permutation_Pad[42], State vector: 01, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.020600
+encrypt - x : 28699,  Permutation_Pad[4], State vector: 01, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.020656
+encrypt - x : 28799,  Permutation_Pad[1], State vector: 10, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.020705
+encrypt - x : 28899,  Permutation_Pad[42], State vector: 01, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.020747
+encrypt - x : 28999,  Permutation_Pad[4], State vector: 01, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.020788
+encrypt - x : 29099,  Permutation_Pad[1], State vector: 00, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.020828
+encrypt - x : 29199,  Permutation_Pad[42], State vector: 11, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.020867
+encrypt - x : 29299,  Permutation_Pad[4], State vector: 10, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.020907
+encrypt - x : 29399,  Permutation_Pad[1], State vector: 11, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.020946
+encrypt - x : 29499,  Permutation_Pad[42], State vector: 10, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.020984
+encrypt - x : 29599,  Permutation_Pad[4], State vector: 01, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.021023
+encrypt - x : 29699,  Permutation_Pad[1], State vector: 11, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.021062
+encrypt - x : 29799,  Permutation_Pad[42], State vector: 01, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.021100
+encrypt - x : 29899,  Permutation_Pad[4], State vector: 11, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.021140
+encrypt - x : 29999,  Permutation_Pad[1], State vector: 10, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.021178
+encrypt - x : 30099,  Permutation_Pad[42], State vector: 11, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.021216
+encrypt - x : 30199,  Permutation_Pad[4], State vector: 10, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.021255
+encrypt - x : 30299,  Permutation_Pad[1], State vector: 00, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.021294
+encrypt - x : 30399,  Permutation_Pad[42], State vector: 01, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.021333
+encrypt - x : 30499,  Permutation_Pad[4], State vector: 10, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.021372
+encrypt - x : 30599,  Permutation_Pad[1], State vector: 00, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.021411
+encrypt - x : 30699,  Permutation_Pad[42], State vector: 00, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.021451
+encrypt - x : 30799,  Permutation_Pad[4], State vector: 01, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.021490
+encrypt - x : 30899,  Permutation_Pad[1], State vector: 10, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.021528
+encrypt - x : 30999,  Permutation_Pad[42], State vector: 11, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.021567
+encrypt - x : 31099,  Permutation_Pad[4], State vector: 11, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.021605
+encrypt - x : 31199,  Permutation_Pad[1], State vector: 10, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.021644
+encrypt - x : 31299,  Permutation_Pad[42], State vector: 11, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.021683
+encrypt - x : 31399,  Permutation_Pad[4], State vector: 11, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.021721
+encrypt - x : 31499,  Permutation_Pad[1], State vector: 00, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.021760
+encrypt - x : 31599,  Permutation_Pad[42], State vector: 01, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.021798
+encrypt - x : 31699,  Permutation_Pad[4], State vector: 01, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.021836
+encrypt - x : 31799,  Permutation_Pad[1], State vector: 10, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.021874
+encrypt - x : 31899,  Permutation_Pad[42], State vector: 11, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.021953
+encrypt - x : 31999,  Permutation_Pad[4], State vector: 11, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.022003
+encrypt - x : 32099,  Permutation_Pad[1], State vector: 10, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.022047
+encrypt - x : 32199,  Permutation_Pad[42], State vector: 01, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.022090
+encrypt - x : 32299,  Permutation_Pad[4], State vector: 10, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.022133
+encrypt - x : 32399,  Permutation_Pad[1], State vector: 11, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.022175
+encrypt - x : 32499,  Permutation_Pad[42], State vector: 01, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.022217
+encrypt - x : 32599,  Permutation_Pad[4], State vector: 00, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.022259
+encrypt - x : 32699,  Permutation_Pad[1], State vector: 10, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.022300
+encrypt - x : 32799,  Permutation_Pad[42], State vector: 01, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.022342
+encrypt - x : 32899,  Permutation_Pad[4], State vector: 00, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.022384
+encrypt - x : 32999,  Permutation_Pad[1], State vector: 01, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.022426
+encrypt - x : 33099,  Permutation_Pad[42], State vector: 00, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.022467
+encrypt - x : 33199,  Permutation_Pad[4], State vector: 00, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.022508
+encrypt - x : 33299,  Permutation_Pad[1], State vector: 11, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.022549
+encrypt - x : 33399,  Permutation_Pad[42], State vector: 01, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.022595
+encrypt - x : 33499,  Permutation_Pad[4], State vector: 10, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.022660
+encrypt - x : 33599,  Permutation_Pad[1], State vector: 00, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.022719
+encrypt - x : 33699,  Permutation_Pad[42], State vector: 00, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.022767
+encrypt - x : 33799,  Permutation_Pad[4], State vector: 11, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.022813
+encrypt - x : 33899,  Permutation_Pad[1], State vector: 01, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.022860
+encrypt - x : 33999,  Permutation_Pad[42], State vector: 01, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.022908
+encrypt - x : 34099,  Permutation_Pad[4], State vector: 11, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.022955
+encrypt - x : 34199,  Permutation_Pad[1], State vector: 01, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.023002
+encrypt - x : 34299,  Permutation_Pad[42], State vector: 01, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.023047
+encrypt - x : 34399,  Permutation_Pad[4], State vector: 10, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.023092
+encrypt - x : 34499,  Permutation_Pad[1], State vector: 01, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.023137
+encrypt - x : 34599,  Permutation_Pad[42], State vector: 01, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.023184
+encrypt - x : 34699,  Permutation_Pad[4], State vector: 01, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.023258
+encrypt - x : 34799,  Permutation_Pad[1], State vector: 00, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.023326
+encrypt - x : 34899,  Permutation_Pad[42], State vector: 10, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.023371
+encrypt - x : 34999,  Permutation_Pad[4], State vector: 11, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.023452
+encrypt - x : 35099,  Permutation_Pad[1], State vector: 00, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.023493
+encrypt - x : 35199,  Permutation_Pad[42], State vector: 01, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.023533
+encrypt - x : 35299,  Permutation_Pad[4], State vector: 10, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.023573
+encrypt - x : 35399,  Permutation_Pad[1], State vector: 00, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.023612
+encrypt - x : 35499,  Permutation_Pad[42], State vector: 10, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.023651
+encrypt - x : 35599,  Permutation_Pad[4], State vector: 10, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.023692
+encrypt - x : 35699,  Permutation_Pad[1], State vector: 01, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.023731
+encrypt - x : 35799,  Permutation_Pad[42], State vector: 01, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.023771
+encrypt - x : 35899,  Permutation_Pad[4], State vector: 11, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.023811
+encrypt - x : 35999,  Permutation_Pad[1], State vector: 11, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.023852
+encrypt - x : 36099,  Permutation_Pad[42], State vector: 11, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.023892
+encrypt - x : 36199,  Permutation_Pad[4], State vector: 10, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.023931
+encrypt - x : 36299,  Permutation_Pad[1], State vector: 10, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.023971
+encrypt - x : 36399,  Permutation_Pad[42], State vector: 11, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.024010
+encrypt - x : 36499,  Permutation_Pad[4], State vector: 01, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.024050
+encrypt - x : 36599,  Permutation_Pad[1], State vector: 00, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.024090
+encrypt - x : 36699,  Permutation_Pad[42], State vector: 01, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.024129
+encrypt - x : 36799,  Permutation_Pad[4], State vector: 00, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.024184
+encrypt - x : 36899,  Permutation_Pad[1], State vector: 00, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.024240
+encrypt - x : 36999,  Permutation_Pad[42], State vector: 10, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.024284
+encrypt - x : 37099,  Permutation_Pad[4], State vector: 01, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.024328
+encrypt - x : 37199,  Permutation_Pad[1], State vector: 00, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.024370
+encrypt - x : 37299,  Permutation_Pad[42], State vector: 11, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.024429
+encrypt - x : 37399,  Permutation_Pad[4], State vector: 11, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.024473
+encrypt - x : 37499,  Permutation_Pad[1], State vector: 00, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.024514
+encrypt - x : 37599,  Permutation_Pad[42], State vector: 00, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.024556
+encrypt - x : 37699,  Permutation_Pad[4], State vector: 10, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.024599
+encrypt - x : 37799,  Permutation_Pad[1], State vector: 00, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.024640
+encrypt - x : 37899,  Permutation_Pad[42], State vector: 10, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.024705
+encrypt - x : 37999,  Permutation_Pad[4], State vector: 11, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.024756
+encrypt - x : 38099,  Permutation_Pad[1], State vector: 01, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.024801
+encrypt - x : 38199,  Permutation_Pad[42], State vector: 00, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.024847
+encrypt - x : 38299,  Permutation_Pad[4], State vector: 00, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.024890
+encrypt - x : 38399,  Permutation_Pad[1], State vector: 10, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.024934
+encrypt - x : 38499,  Permutation_Pad[42], State vector: 10, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.024976
+encrypt - x : 38599,  Permutation_Pad[4], State vector: 00, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.025018
+encrypt - x : 38699,  Permutation_Pad[1], State vector: 10, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.025061
+encrypt - x : 38799,  Permutation_Pad[42], State vector: 11, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.025102
+encrypt - x : 38899,  Permutation_Pad[4], State vector: 01, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.025144
+encrypt - x : 38999,  Permutation_Pad[1], State vector: 00, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.025196
+encrypt - x : 39099,  Permutation_Pad[42], State vector: 11, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.025255
+encrypt - x : 39199,  Permutation_Pad[4], State vector: 11, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.025297
+encrypt - x : 39299,  Permutation_Pad[1], State vector: 11, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.025349
+encrypt - x : 39399,  Permutation_Pad[42], State vector: 01, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.025398
+encrypt - x : 39499,  Permutation_Pad[4], State vector: 01, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.025440
+encrypt - x : 39599,  Permutation_Pad[1], State vector: 01, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.025482
+encrypt - x : 39699,  Permutation_Pad[42], State vector: 01, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.025524
+encrypt - x : 39799,  Permutation_Pad[4], State vector: 11, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.025573
+encrypt - x : 39899,  Permutation_Pad[1], State vector: 01, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.025623
+encrypt - x : 39999,  Permutation_Pad[42], State vector: 01, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.025666
+encrypt - x : 40099,  Permutation_Pad[4], State vector: 01, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.025707
+encrypt - x : 40199,  Permutation_Pad[1], State vector: 11, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.025749
+encrypt - x : 40299,  Permutation_Pad[42], State vector: 00, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.025797
+encrypt - x : 40399,  Permutation_Pad[4], State vector: 11, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.025847
+encrypt - x : 40499,  Permutation_Pad[1], State vector: 00, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.025890
+encrypt - x : 40599,  Permutation_Pad[42], State vector: 11, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.025931
+encrypt - x : 40699,  Permutation_Pad[4], State vector: 10, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.025973
+encrypt - x : 40799,  Permutation_Pad[1], State vector: 10, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.026023
+encrypt - x : 40899,  Permutation_Pad[42], State vector: 10, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.026073
+encrypt - x : 40999,  Permutation_Pad[4], State vector: 10, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.026115
+encrypt - x : 41099,  Permutation_Pad[1], State vector: 01, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.026156
+encrypt - x : 41199,  Permutation_Pad[42], State vector: 00, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.026197
+encrypt - x : 41299,  Permutation_Pad[4], State vector: 01, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.026238
+encrypt - x : 41399,  Permutation_Pad[1], State vector: 11, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.026287
+encrypt - x : 41499,  Permutation_Pad[42], State vector: 01, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.026334
+encrypt - x : 41599,  Permutation_Pad[4], State vector: 01, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.026375
+encrypt - x : 41699,  Permutation_Pad[1], State vector: 01, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.026416
+encrypt - x : 41799,  Permutation_Pad[42], State vector: 11, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.026457
+encrypt - x : 41899,  Permutation_Pad[4], State vector: 10, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.026506
+encrypt - x : 41999,  Permutation_Pad[1], State vector: 00, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.026581
+encrypt - x : 42099,  Permutation_Pad[42], State vector: 01, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.026623
+encrypt - x : 42199,  Permutation_Pad[4], State vector: 10, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.026663
+encrypt - x : 42299,  Permutation_Pad[1], State vector: 00, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.026737
+encrypt - x : 42399,  Permutation_Pad[42], State vector: 10, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.026796
+encrypt - x : 42499,  Permutation_Pad[4], State vector: 01, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.026848
+encrypt - x : 42599,  Permutation_Pad[1], State vector: 01, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.026893
+encrypt - x : 42699,  Permutation_Pad[42], State vector: 00, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.026936
+encrypt - x : 42799,  Permutation_Pad[4], State vector: 11, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.026980
+encrypt - x : 42899,  Permutation_Pad[1], State vector: 01, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.027030
+encrypt - x : 42999,  Permutation_Pad[42], State vector: 01, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.027081
+encrypt - x : 43099,  Permutation_Pad[4], State vector: 00, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.027123
+encrypt - x : 43199,  Permutation_Pad[1], State vector: 11, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.027166
+encrypt - x : 43299,  Permutation_Pad[42], State vector: 11, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.027209
+encrypt - x : 43399,  Permutation_Pad[4], State vector: 10, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.027260
+encrypt - x : 43499,  Permutation_Pad[1], State vector: 01, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.027309
+encrypt - x : 43599,  Permutation_Pad[42], State vector: 11, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.027352
+encrypt - x : 43699,  Permutation_Pad[4], State vector: 10, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.027394
+encrypt - x : 43799,  Permutation_Pad[1], State vector: 10, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.027436
+encrypt - x : 43899,  Permutation_Pad[42], State vector: 10, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.027736
+encrypt - x : 43999,  Permutation_Pad[4], State vector: 11, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.027802
+encrypt - x : 44099,  Permutation_Pad[1], State vector: 00, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.027845
+encrypt - x : 44199,  Permutation_Pad[42], State vector: 00, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.027889
+encrypt - x : 44299,  Permutation_Pad[4], State vector: 01, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.027941
+encrypt - x : 44399,  Permutation_Pad[1], State vector: 00, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.027991
+encrypt - x : 44499,  Permutation_Pad[42], State vector: 00, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.028034
+encrypt - x : 44599,  Permutation_Pad[4], State vector: 10, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.028076
+encrypt - x : 44699,  Permutation_Pad[1], State vector: 10, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.028120
+encrypt - x : 44799,  Permutation_Pad[42], State vector: 00, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.028170
+encrypt - x : 44899,  Permutation_Pad[4], State vector: 10, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.028222
+encrypt - x : 44999,  Permutation_Pad[1], State vector: 10, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.028265
+encrypt - x : 45099,  Permutation_Pad[42], State vector: 11, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.028308
+encrypt - x : 45199,  Permutation_Pad[4], State vector: 01, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.028351
+encrypt - x : 45299,  Permutation_Pad[1], State vector: 00, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.028393
+encrypt - x : 45399,  Permutation_Pad[42], State vector: 00, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.028445
+encrypt - x : 45499,  Permutation_Pad[4], State vector: 01, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.028494
+encrypt - x : 45599,  Permutation_Pad[1], State vector: 10, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.028537
+encrypt - x : 45699,  Permutation_Pad[42], State vector: 10, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.028581
+encrypt - x : 45799,  Permutation_Pad[4], State vector: 10, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.028623
+encrypt - x : 45899,  Permutation_Pad[1], State vector: 10, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.028674
+encrypt - x : 45999,  Permutation_Pad[42], State vector: 01, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.032627
+encrypt - x : 46099,  Permutation_Pad[4], State vector: 10, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.032674
+encrypt - x : 46199,  Permutation_Pad[1], State vector: 01, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.032710
+encrypt - x : 46299,  Permutation_Pad[42], State vector: 01, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.032746
+encrypt - x : 46399,  Permutation_Pad[4], State vector: 11, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.032789
+encrypt - x : 46499,  Permutation_Pad[1], State vector: 10, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.032829
+encrypt - x : 46599,  Permutation_Pad[42], State vector: 10, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.032862
+encrypt - x : 46699,  Permutation_Pad[4], State vector: 00, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.032895
+encrypt - x : 46799,  Permutation_Pad[1], State vector: 01, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.032927
+encrypt - x : 46899,  Permutation_Pad[42], State vector: 01, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.032968
+encrypt - x : 46999,  Permutation_Pad[4], State vector: 01, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.033007
+encrypt - x : 47099,  Permutation_Pad[1], State vector: 00, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.033039
+encrypt - x : 47199,  Permutation_Pad[42], State vector: 10, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.033071
+encrypt - x : 47299,  Permutation_Pad[4], State vector: 10, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.033103
+encrypt - x : 47399,  Permutation_Pad[1], State vector: 11, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.033143
+encrypt - x : 47499,  Permutation_Pad[42], State vector: 01, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.033181
+encrypt - x : 47599,  Permutation_Pad[4], State vector: 01, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.033214
+encrypt - x : 47699,  Permutation_Pad[1], State vector: 10, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.033245
+encrypt - x : 47799,  Permutation_Pad[42], State vector: 01, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.033278
+encrypt - x : 47899,  Permutation_Pad[4], State vector: 00, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.033340
+encrypt - x : 47999,  Permutation_Pad[1], State vector: 11, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.033398
+encrypt - x : 48099,  Permutation_Pad[42], State vector: 10, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.033438
+encrypt - x : 48199,  Permutation_Pad[4], State vector: 00, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.033477
+encrypt - x : 48299,  Permutation_Pad[1], State vector: 11, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.033514
+encrypt - x : 48399,  Permutation_Pad[42], State vector: 11, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.033560
+encrypt - x : 48499,  Permutation_Pad[4], State vector: 00, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.033605
+encrypt - x : 48599,  Permutation_Pad[1], State vector: 11, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.033642
+encrypt - x : 48699,  Permutation_Pad[42], State vector: 11, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.033678
+encrypt - x : 48799,  Permutation_Pad[4], State vector: 01, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.033715
+encrypt - x : 48899,  Permutation_Pad[1], State vector: 11, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.033751
+encrypt - x : 48999,  Permutation_Pad[42], State vector: 01, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.033823
+encrypt - x : 49099,  Permutation_Pad[4], State vector: 11, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.033861
+encrypt - x : 49199,  Permutation_Pad[1], State vector: 11, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.033898
+encrypt - x : 49299,  Permutation_Pad[42], State vector: 11, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.033934
+encrypt - x : 49399,  Permutation_Pad[4], State vector: 11, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.033978
+encrypt - x : 49499,  Permutation_Pad[1], State vector: 10, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.034029
+encrypt - x : 49599,  Permutation_Pad[42], State vector: 00, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.034071
+encrypt - x : 49699,  Permutation_Pad[4], State vector: 01, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.034106
+encrypt - x : 49799,  Permutation_Pad[1], State vector: 00, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.034141
+encrypt - x : 49899,  Permutation_Pad[42], State vector: 10, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.034175
+encrypt - x : 49999,  Permutation_Pad[4], State vector: 01, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.034219
+encrypt - x : 50099,  Permutation_Pad[1], State vector: 00, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.034261
+encrypt - x : 50199,  Permutation_Pad[42], State vector: 00, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.034296
+encrypt - x : 50299,  Permutation_Pad[4], State vector: 01, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.034331
+encrypt - x : 50399,  Permutation_Pad[1], State vector: 01, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.034366
+encrypt - x : 50499,  Permutation_Pad[42], State vector: 11, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.034424
+encrypt - x : 50599,  Permutation_Pad[4], State vector: 00, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.034469
+encrypt - x : 50699,  Permutation_Pad[1], State vector: 00, Most frequent: 01
+encrypt - Elapsed time: 0:00:00.034503
+encrypt - x : 50799,  Permutation_Pad[42], State vector: 10, Most frequent: 10
+encrypt - Elapsed time: 0:00:00.034539
+encrypt - x : 50899,  Permutation_Pad[4], State vector: 00, Most frequent: 11
+encrypt - Elapsed time: 0:00:00.034575
+encrypt - x : 50999,  Permutation_Pad[1], State vector: 11, Most frequent: 00
+encrypt - Elapsed time: 0:00:00.034618
+
+encrypt - Elapsed time for encryption of message: 0:00:00.034650
+
+encrypt - Length of ciphertext in bits stored into QPP_param.json:  102064
+
+encrypt - First 192 bits in ciphertext string
+001100110111100001101111011111101101111111010001111000011111010010111101110110101110000101101100011001001111001110110011010111011011100110110010110111010010100001101101001011011100110110011010
+ciphertext_to_binary - Ciphertext file name: ciphertext_Christmas_tree.bin
