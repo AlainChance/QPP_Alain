@@ -1,0 +1,223 @@
+
+Set n, possible number of quantum states = 2**num_of_qubits: 8
+
+backend = AerSimulator(method='statevector')
+
+parameters - Secret key file name: Secret_key_3-qubits_Christmas_tree.txt
+
+parameters - Secret key retrieved from file:  001001101111100110100110110100111111111001011110011111100101010110000100010100111100010001101011010100111000011000110101111000010100011010011011100100000111001100011111110111111000010010100110010111100010011111111100100110000001010011110101101010001101001001011010101101001101011110101010111110001001000010011010110001100000110111011010100000110011011001011110111101010001011111110011001011001011101100100001
+
+parameters - Set bits_in_block = num_of_bits / num_of_perm_in_pad: 24
+
+parameters - Length of key chunks (bits_in_block/num_of_qubits): 8
+QPP_param_file: QPP_param.json
+plaintext_file: Christmas_tree.png
+trace: 1
+job_trigger: 1195
+print_trigger: 1195
+draw_circuit: True
+do_sampler: True
+version: V0
+service: None
+backend: None
+opt_level, optimisation level for transpile: 1
+resilience_level: 1
+n, possible number of quantum states: 8
+num_of_bits, classical key length (bit): 408
+bits_in_block: 24
+num_of_qubits: 3
+num_of_perm_in_pad, number of permutations gates in pad: 17
+pad_selection_key_size: 6
+file_to_bitstring - Plaintext file Christmas_tree.png is an image
+
+file_to_bitstring - Length of image in bytes: 12758
+
+file_to_bitstring - First 100 bytes
+b'\x89PNG\r\n\x1a\n\x00\x00\x00\rIHDR\x00\x00\x02Q\x00\x00\x02K\x08\x03\x00\x00\x00\xf0\xef3\x11\x00\x00\x02\xdfPLTE\xff\xff\xff\xef\xef\xef\x00\x00\x00\x00\x06\x00\x00\t\x00\x00\x13\x00\x00\x19\x00\x00\x1c\x00\x00&\x00\x00/\x00\x009\x00\x00B\x00\x00L\x00\x00O\x00\x00R\x00\x00V\x00\x00Y\x00\x00_\x00\x00f\x00\x00i'
+
+file_to_bitstring - Last 100 bytes
+b'\xff\xb2\xa0\xa3*\x94\x04\xec\xa9U\xad\t\xfa\xf3\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00Z\x82\xff\x0fV\xbds5\xf8w\xd8\xa9\x00\x00\x00\x00IEND\xaeB`\x82'
+
+file_to_bitstring - Length of image in bits padded with '0': 102066
+
+file_to_bitstring - First 192 bits in message, shown grouped by 8 bits
+10001001 01010000 01001110 01000111 00001101 00001010 00011010 00001010 00000000 00000000 00000000 00001101 01001001 01001000 01000100 01010010 00000000 00000000 00000010 01010001 00000000 000
+
+file_to_bitstring - Last 192 bits in message, shown grouped by 8 bits
+111 00001111 01010110 10111101 01110011 00110101 11111000 01110111 11011000 10101001 00000000 00000000 00000000 00000000 01001001 01000101 01001110 01000100 10101110 01000010 01100000 10000010
+
+permutation_pad
+
+permutation pad - Permutation number: 0, Depth of quantum circuit: 1
+
+permutation_pad - permutation number: 0, dictionary:
+{0: '000', 1: '001', 2: '101', 3: '111', 4: '010', 5: '110', 6: '011', 7: '100'}
+permutation pad - Elapsed time: 0:00:00.510638
+
+permutation pad - Permutation number: 1, Depth of quantum circuit: 1
+
+permutation_pad - permutation number: 1, dictionary:
+{0: '000', 1: '101', 2: '111', 3: '110', 4: '011', 5: '100', 6: '001', 7: '010'}
+permutation pad - Elapsed time: 0:00:00.614520
+
+permutation pad - Permutation number: 2, Depth of quantum circuit: 1
+
+permutation_pad - permutation number: 2, dictionary:
+{0: '011', 1: '111', 2: '010', 3: '101', 4: '001', 5: '110', 6: '000', 7: '100'}
+permutation pad - Elapsed time: 0:00:00.804831
+
+permutation pad - Permutation number: 3, Depth of quantum circuit: 1
+
+permutation_pad - permutation number: 3, dictionary:
+{0: '000', 1: '101', 2: '011', 3: '010', 4: '111', 5: '110', 6: '100', 7: '001'}
+permutation pad - Elapsed time: 0:00:00.961320
+
+permutation pad - Permutation number: 4, Depth of quantum circuit: 1
+
+permutation_pad - permutation number: 4, dictionary:
+{0: '101', 1: '100', 2: '111', 3: '001', 4: '000', 5: '010', 6: '110', 7: '011'}
+permutation pad - Elapsed time: 0:00:01.136245
+
+permutation pad - Permutation number: 5, Depth of quantum circuit: 1
+
+permutation_pad - permutation number: 5, dictionary:
+{0: '001', 1: '000', 2: '101', 3: '111', 4: '100', 5: '010', 6: '011', 7: '110'}
+permutation pad - Elapsed time: 0:00:01.277550
+
+permutation pad - Permutation number: 6, Depth of quantum circuit: 1
+
+permutation_pad - permutation number: 6, dictionary:
+{0: '010', 1: '001', 2: '000', 3: '110', 4: '101', 5: '100', 6: '111', 7: '011'}
+permutation pad - Elapsed time: 0:00:01.402793
+
+permutation pad - Permutation number: 7, Depth of quantum circuit: 1
+
+permutation_pad - permutation number: 7, dictionary:
+{0: '011', 1: '111', 2: '101', 3: '000', 4: '110', 5: '100', 6: '010', 7: '001'}
+permutation pad - Elapsed time: 0:00:01.575665
+
+permutation pad - Permutation number: 8, Depth of quantum circuit: 1
+
+permutation_pad - permutation number: 8, dictionary:
+{0: '000', 1: '111', 2: '011', 3: '010', 4: '110', 5: '001', 6: '101', 7: '100'}
+permutation pad - Elapsed time: 0:00:01.709087
+
+permutation pad - Permutation number: 9, Depth of quantum circuit: 1
+
+permutation_pad - permutation number: 9, dictionary:
+{0: '010', 1: '011', 2: '100', 3: '101', 4: '000', 5: '111', 6: '001', 7: '110'}
+permutation pad - Elapsed time: 0:00:01.833417
+
+permutation pad - Permutation number: 10, Depth of quantum circuit: 1
+
+permutation_pad - permutation number: 10, dictionary:
+{0: '000', 1: '011', 2: '111', 3: '110', 4: '001', 5: '100', 6: '101', 7: '010'}
+permutation pad - Elapsed time: 0:00:01.949491
+
+permutation pad - Permutation number: 11, Depth of quantum circuit: 1
+
+permutation_pad - permutation number: 11, dictionary:
+{0: '000', 1: '010', 2: '111', 3: '100', 4: '001', 5: '011', 6: '110', 7: '101'}
+permutation pad - Elapsed time: 0:00:02.059113
+
+permutation pad - Permutation number: 12, Depth of quantum circuit: 1
+
+permutation_pad - permutation number: 12, dictionary:
+{0: '100', 1: '011', 2: '111', 3: '001', 4: '000', 5: '110', 6: '010', 7: '101'}
+permutation pad - Elapsed time: 0:00:02.160754
+
+permutation pad - Permutation number: 13, Depth of quantum circuit: 1
+
+permutation_pad - permutation number: 13, dictionary:
+{0: '011', 1: '001', 2: '101', 3: '010', 4: '110', 5: '111', 6: '000', 7: '100'}
+permutation pad - Elapsed time: 0:00:02.304717
+
+permutation pad - Permutation number: 14, Depth of quantum circuit: 1
+
+permutation_pad - permutation number: 14, dictionary:
+{0: '001', 1: '101', 2: '110', 3: '010', 4: '011', 5: '000', 6: '111', 7: '100'}
+permutation pad - Elapsed time: 0:00:02.532284
+
+permutation pad - Permutation number: 15, Depth of quantum circuit: 1
+
+permutation_pad - permutation number: 15, dictionary:
+{0: '000', 1: '011', 2: '010', 3: '001', 4: '101', 5: '111', 6: '110', 7: '100'}
+permutation pad - Elapsed time: 0:00:02.705034
+
+permutation pad - Permutation number: 16, Depth of quantum circuit: 1
+
+permutation_pad - permutation number: 16, dictionary:
+{0: '000', 1: '111', 2: '011', 3: '001', 4: '110', 5: '101', 6: '100', 7: '010'}
+permutation pad - Elapsed time: 0:00:02.925088
+permutation pad - Length of Permutation_Pad: 17
+
+encrypt - Length of message in bits:  102066
+encrypt - Length of randomized message:  102066
+encrypt - Length of message chunks: 34022
+encrypt - Remainder of dividing (Length of message chunks) by (Job trigger): 562
+
+encrypt - x : 1194,  Permutation_Pad[2], State vector: 100, Most frequent: 001
+encrypt - Elapsed time: 0:00:00.000448
+encrypt - x : 2389,  Permutation_Pad[3], State vector: 110, Most frequent: 100
+encrypt - Elapsed time: 0:00:00.000813
+encrypt - x : 3584,  Permutation_Pad[11], State vector: 100, Most frequent: 001
+encrypt - Elapsed time: 0:00:00.001098
+encrypt - x : 4779,  Permutation_Pad[2], State vector: 010, Most frequent: 010
+encrypt - Elapsed time: 0:00:00.001420
+encrypt - x : 5974,  Permutation_Pad[8], State vector: 000, Most frequent: 000
+encrypt - Elapsed time: 0:00:00.001727
+encrypt - x : 7169,  Permutation_Pad[5], State vector: 010, Most frequent: 101
+encrypt - Elapsed time: 0:00:00.002013
+encrypt - x : 8364,  Permutation_Pad[9], State vector: 000, Most frequent: 010
+encrypt - Elapsed time: 0:00:00.002291
+encrypt - x : 9559,  Permutation_Pad[2], State vector: 100, Most frequent: 001
+encrypt - Elapsed time: 0:00:00.006279
+encrypt - x : 10754,  Permutation_Pad[5], State vector: 000, Most frequent: 001
+encrypt - Elapsed time: 0:00:00.006655
+encrypt - x : 11949,  Permutation_Pad[9], State vector: 110, Most frequent: 001
+encrypt - Elapsed time: 0:00:00.006994
+encrypt - x : 13144,  Permutation_Pad[5], State vector: 110, Most frequent: 011
+encrypt - Elapsed time: 0:00:00.007382
+encrypt - x : 14339,  Permutation_Pad[13], State vector: 001, Most frequent: 001
+encrypt - Elapsed time: 0:00:00.007768
+encrypt - x : 15534,  Permutation_Pad[1], State vector: 000, Most frequent: 000
+encrypt - Elapsed time: 0:00:00.008265
+encrypt - x : 16729,  Permutation_Pad[13], State vector: 101, Most frequent: 111
+encrypt - Elapsed time: 0:00:00.008600
+encrypt - x : 17924,  Permutation_Pad[8], State vector: 101, Most frequent: 001
+encrypt - Elapsed time: 0:00:00.008982
+encrypt - x : 19119,  Permutation_Pad[4], State vector: 000, Most frequent: 101
+encrypt - Elapsed time: 0:00:00.009470
+encrypt - x : 20314,  Permutation_Pad[2], State vector: 010, Most frequent: 010
+encrypt - Elapsed time: 0:00:00.009881
+encrypt - x : 21509,  Permutation_Pad[3], State vector: 010, Most frequent: 011
+encrypt - Elapsed time: 0:00:00.010305
+encrypt - x : 22704,  Permutation_Pad[10], State vector: 111, Most frequent: 010
+encrypt - Elapsed time: 0:00:00.010678
+encrypt - x : 23899,  Permutation_Pad[4], State vector: 011, Most frequent: 001
+encrypt - Elapsed time: 0:00:00.011038
+encrypt - x : 25094,  Permutation_Pad[4], State vector: 011, Most frequent: 001
+encrypt - Elapsed time: 0:00:00.011480
+encrypt - x : 26289,  Permutation_Pad[13], State vector: 100, Most frequent: 110
+encrypt - Elapsed time: 0:00:00.011879
+encrypt - x : 27484,  Permutation_Pad[3], State vector: 110, Most frequent: 100
+encrypt - Elapsed time: 0:00:00.012261
+encrypt - x : 28679,  Permutation_Pad[9], State vector: 110, Most frequent: 001
+encrypt - Elapsed time: 0:00:00.012625
+encrypt - x : 29874,  Permutation_Pad[9], State vector: 001, Most frequent: 011
+encrypt - Elapsed time: 0:00:00.012984
+encrypt - x : 31069,  Permutation_Pad[0], State vector: 000, Most frequent: 000
+encrypt - Elapsed time: 0:00:00.013395
+encrypt - x : 32264,  Permutation_Pad[6], State vector: 100, Most frequent: 101
+encrypt - Elapsed time: 0:00:00.013751
+encrypt - x : 33459,  Permutation_Pad[4], State vector: 000, Most frequent: 101
+encrypt - Elapsed time: 0:00:00.021841
+
+encrypt - Elapsed time for encryption of message: 0:00:00.022057
+
+encrypt - Length of ciphertext in bits stored into QPP_param.json:  102066
+
+encrypt - First 192 bits in ciphertext string:
+ 111010011111011101100011011110000011101111101000010000011110110100010001010110101011111000011110010011000000011101000111001110001000100101010010001000001100011000001110110100100011110111000110
+
+ciphertext_to_binary - Ciphertext file name: ciphertext_Christmas_tree.bin
