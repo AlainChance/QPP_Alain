@@ -1,0 +1,534 @@
+
+Version set to: V1
+
+Set n, possible number of quantum states = 2**num_of_qubits: 4
+
+backend = AerSimulator(method='statevector')
+
+parameters - Secret key file name: Secret_key_2-qubits_Hello.txt
+
+parameters - Secret key retrieved from file:  1011111010000101110010100110001110101010000001110110011110000011010010010100001011100010000110100000010111011010000001111101111000101100010100111100010010110000001110010011111010111011101000000001000111011100101011010001010000100100000110000000000010101100101100000010000011001010100101101011110101011110001111010100100101101101101101001011101101010001000101010000111011110111110110001011000111101100101010100101110111010101101011111101001100101011
+
+parameters - Set bits_in_block = num_of_bits / num_of_perm_in_pad: 8
+
+parameters - Length of key chunks (bits_in_block/num_of_qubits): 4
+QPP_param_file: QPP_param.json
+plaintext_file: Hello.txt
+trace: 1
+job_trigger: 1
+print_trigger: 1
+draw_circuit: True
+do_sampler: True
+version: V1
+service: None
+backend: None
+opt_level, optimisation level for transpile: 1
+resilience_level: 1
+n, possible number of quantum states: 4
+num_of_bits, classical key length (bit): 448
+bits_in_block: 8
+num_of_qubits: 2
+num_of_perm_in_pad, number of permutations gates in pad: 56
+pad_selection_key_size: 6
+binary_to_ciphertext - Ciphertext file name: ciphertext_Hello.bin
+
+permutation_pad
+
+permutation pad - Permutation number: 0, Depth of quantum circuit: 3
+
+permutation_pad - permutation number: 0, dictionary:
+{0: '00', 1: '11', 2: '10', 3: '01'}
+permutation pad - Elapsed time: 0:00:00.491190
+
+permutation pad - Permutation number: 1, Depth of quantum circuit: 3
+
+permutation_pad - permutation number: 1, dictionary:
+{0: '10', 1: '00', 2: '11', 3: '01'}
+permutation pad - Elapsed time: 0:00:00.630330
+
+permutation pad - Permutation number: 2, Depth of quantum circuit: 1
+
+permutation_pad - permutation number: 2, dictionary:
+{0: '01', 1: '00', 2: '11', 3: '10'}
+permutation pad - Elapsed time: 0:00:00.896634
+
+permutation pad - Permutation number: 3, Depth of quantum circuit: 2
+
+permutation_pad - permutation number: 3, dictionary:
+{0: '10', 1: '00', 2: '01', 3: '11'}
+permutation pad - Elapsed time: 0:00:01.014982
+
+permutation pad - Permutation number: 4, Depth of quantum circuit: 2
+
+permutation_pad - permutation number: 4, dictionary:
+{0: '00', 1: '11', 2: '01', 3: '10'}
+permutation pad - Elapsed time: 0:00:01.131734
+
+permutation pad - Permutation number: 5, Depth of quantum circuit: 2
+
+permutation_pad - permutation number: 5, dictionary:
+{0: '10', 1: '00', 2: '01', 3: '11'}
+permutation pad - Elapsed time: 0:00:01.248650
+
+permutation pad - Permutation number: 6, Depth of quantum circuit: 2
+
+permutation_pad - permutation number: 6, dictionary:
+{0: '00', 1: '01', 2: '10', 3: '11'}
+permutation pad - Elapsed time: 0:00:01.359646
+
+permutation pad - Permutation number: 7, Depth of quantum circuit: 2
+
+permutation_pad - permutation number: 7, dictionary:
+{0: '01', 1: '10', 2: '00', 3: '11'}
+permutation pad - Elapsed time: 0:00:01.465476
+
+permutation pad - Permutation number: 8, Depth of quantum circuit: 2
+
+permutation_pad - permutation number: 8, dictionary:
+{0: '11', 1: '00', 2: '10', 3: '01'}
+permutation pad - Elapsed time: 0:00:01.570492
+
+permutation pad - Permutation number: 9, Depth of quantum circuit: 3
+
+permutation_pad - permutation number: 9, dictionary:
+{0: '01', 1: '11', 2: '00', 3: '10'}
+permutation pad - Elapsed time: 0:00:01.700363
+
+permutation pad - Permutation number: 10, Depth of quantum circuit: 3
+
+permutation_pad - permutation number: 10, dictionary:
+{0: '11', 1: '00', 2: '01', 3: '10'}
+permutation pad - Elapsed time: 0:00:01.813562
+
+permutation pad - Permutation number: 11, Depth of quantum circuit: 1
+
+permutation_pad - permutation number: 11, dictionary:
+{0: '00', 1: '01', 2: '11', 3: '10'}
+permutation pad - Elapsed time: 0:00:01.911139
+
+permutation pad - Permutation number: 12, Depth of quantum circuit: 3
+
+permutation_pad - permutation number: 12, dictionary:
+{0: '10', 1: '00', 2: '11', 3: '01'}
+permutation pad - Elapsed time: 0:00:02.045887
+
+permutation pad - Permutation number: 13, Depth of quantum circuit: 1
+
+permutation_pad - permutation number: 13, dictionary:
+{0: '00', 1: '01', 2: '11', 3: '10'}
+permutation pad - Elapsed time: 0:00:02.150173
+
+permutation pad - Permutation number: 14, Depth of quantum circuit: 2
+
+permutation_pad - permutation number: 14, dictionary:
+{0: '10', 1: '00', 2: '01', 3: '11'}
+permutation pad - Elapsed time: 0:00:02.235352
+
+permutation pad - Permutation number: 15, Depth of quantum circuit: 2
+
+permutation_pad - permutation number: 15, dictionary:
+{0: '00', 1: '01', 2: '10', 3: '11'}
+permutation pad - Elapsed time: 0:00:02.338214
+
+permutation pad - Permutation number: 16, Depth of quantum circuit: 3
+
+permutation_pad - permutation number: 16, dictionary:
+{0: '11', 1: '00', 2: '01', 3: '10'}
+permutation pad - Elapsed time: 0:00:02.440976
+
+permutation pad - Permutation number: 17, Depth of quantum circuit: 1
+
+permutation_pad - permutation number: 17, dictionary:
+{0: '10', 1: '01', 2: '00', 3: '11'}
+permutation pad - Elapsed time: 0:00:02.546310
+
+permutation pad - Permutation number: 18, Depth of quantum circuit: 2
+
+permutation_pad - permutation number: 18, dictionary:
+{0: '10', 1: '11', 2: '01', 3: '00'}
+permutation pad - Elapsed time: 0:00:02.659611
+
+permutation pad - Permutation number: 19, Depth of quantum circuit: 2
+
+permutation_pad - permutation number: 19, dictionary:
+{0: '10', 1: '00', 2: '11', 3: '01'}
+permutation pad - Elapsed time: 0:00:02.915349
+
+permutation pad - Permutation number: 20, Depth of quantum circuit: 2
+
+permutation_pad - permutation number: 20, dictionary:
+{0: '00', 1: '01', 2: '10', 3: '11'}
+permutation pad - Elapsed time: 0:00:03.005089
+
+permutation pad - Permutation number: 21, Depth of quantum circuit: 3
+
+permutation_pad - permutation number: 21, dictionary:
+{0: '00', 1: '11', 2: '10', 3: '01'}
+permutation pad - Elapsed time: 0:00:03.128355
+
+permutation pad - Permutation number: 22, Depth of quantum circuit: 1
+
+permutation_pad - permutation number: 22, dictionary:
+{0: '00', 1: '11', 2: '10', 3: '01'}
+permutation pad - Elapsed time: 0:00:03.277860
+
+permutation pad - Permutation number: 23, Depth of quantum circuit: 3
+
+permutation_pad - permutation number: 23, dictionary:
+{0: '10', 1: '11', 2: '01', 3: '00'}
+permutation pad - Elapsed time: 0:00:03.403766
+
+permutation pad - Permutation number: 24, Depth of quantum circuit: 1
+
+permutation_pad - permutation number: 24, dictionary:
+{0: '10', 1: '11', 2: '00', 3: '01'}
+permutation pad - Elapsed time: 0:00:03.513346
+
+permutation pad - Permutation number: 25, Depth of quantum circuit: 2
+
+permutation_pad - permutation number: 25, dictionary:
+{0: '11', 1: '01', 2: '00', 3: '10'}
+permutation pad - Elapsed time: 0:00:03.623198
+
+permutation pad - Permutation number: 26, Depth of quantum circuit: 3
+
+permutation_pad - permutation number: 26, dictionary:
+{0: '00', 1: '01', 2: '11', 3: '10'}
+permutation pad - Elapsed time: 0:00:03.736093
+
+permutation pad - Permutation number: 27, Depth of quantum circuit: 1
+
+permutation_pad - permutation number: 27, dictionary:
+{0: '11', 1: '10', 2: '01', 3: '00'}
+permutation pad - Elapsed time: 0:00:03.843260
+
+permutation pad - Permutation number: 28, Depth of quantum circuit: 2
+
+permutation_pad - permutation number: 28, dictionary:
+{0: '11', 1: '01', 2: '10', 3: '00'}
+permutation pad - Elapsed time: 0:00:03.957744
+
+permutation pad - Permutation number: 29, Depth of quantum circuit: 1
+
+permutation_pad - permutation number: 29, dictionary:
+{0: '11', 1: '01', 2: '10', 3: '00'}
+permutation pad - Elapsed time: 0:00:04.076443
+
+permutation pad - Permutation number: 30, Depth of quantum circuit: 3
+
+permutation_pad - permutation number: 30, dictionary:
+{0: '01', 1: '10', 2: '11', 3: '00'}
+permutation pad - Elapsed time: 0:00:04.185496
+
+permutation pad - Permutation number: 31, Depth of quantum circuit: 3
+
+permutation_pad - permutation number: 31, dictionary:
+{0: '11', 1: '00', 2: '01', 3: '10'}
+permutation pad - Elapsed time: 0:00:04.293888
+
+permutation pad - Permutation number: 32, Depth of quantum circuit: 2
+
+permutation_pad - permutation number: 32, dictionary:
+{0: '10', 1: '00', 2: '11', 3: '01'}
+permutation pad - Elapsed time: 0:00:04.395510
+
+permutation pad - Permutation number: 33, Depth of quantum circuit: 3
+
+permutation_pad - permutation number: 33, dictionary:
+{0: '10', 1: '11', 2: '01', 3: '00'}
+permutation pad - Elapsed time: 0:00:04.520280
+
+permutation pad - Permutation number: 34, Depth of quantum circuit: 1
+
+permutation_pad - permutation number: 34, dictionary:
+{0: '01', 1: '00', 2: '11', 3: '10'}
+permutation pad - Elapsed time: 0:00:04.630038
+
+permutation pad - Permutation number: 35, Depth of quantum circuit: 2
+
+permutation_pad - permutation number: 35, dictionary:
+{0: '00', 1: '11', 2: '01', 3: '10'}
+permutation pad - Elapsed time: 0:00:04.719791
+
+permutation pad - Permutation number: 36, Depth of quantum circuit: 3
+
+permutation_pad - permutation number: 36, dictionary:
+{0: '00', 1: '10', 2: '01', 3: '11'}
+permutation pad - Elapsed time: 0:00:04.852993
+
+permutation pad - Permutation number: 37, Depth of quantum circuit: 2
+
+permutation_pad - permutation number: 37, dictionary:
+{0: '00', 1: '01', 2: '10', 3: '11'}
+permutation pad - Elapsed time: 0:00:04.952659
+
+permutation pad - Permutation number: 38, Depth of quantum circuit: 3
+
+permutation_pad - permutation number: 38, dictionary:
+{0: '00', 1: '10', 2: '01', 3: '11'}
+permutation pad - Elapsed time: 0:00:05.066389
+
+permutation pad - Permutation number: 39, Depth of quantum circuit: 2
+
+permutation_pad - permutation number: 39, dictionary:
+{0: '11', 1: '00', 2: '10', 3: '01'}
+permutation pad - Elapsed time: 0:00:05.347433
+
+permutation pad - Permutation number: 40, Depth of quantum circuit: 3
+
+permutation_pad - permutation number: 40, dictionary:
+{0: '00', 1: '01', 2: '11', 3: '10'}
+permutation pad - Elapsed time: 0:00:05.448922
+
+permutation pad - Permutation number: 41, Depth of quantum circuit: 2
+
+permutation_pad - permutation number: 41, dictionary:
+{0: '11', 1: '00', 2: '01', 3: '10'}
+permutation pad - Elapsed time: 0:00:05.539402
+
+permutation pad - Permutation number: 42, Depth of quantum circuit: 1
+
+permutation_pad - permutation number: 42, dictionary:
+{0: '00', 1: '11', 2: '10', 3: '01'}
+permutation pad - Elapsed time: 0:00:05.627542
+
+permutation pad - Permutation number: 43, Depth of quantum circuit: 1
+
+permutation_pad - permutation number: 43, dictionary:
+{0: '10', 1: '11', 2: '00', 3: '01'}
+permutation pad - Elapsed time: 0:00:05.713160
+
+permutation pad - Permutation number: 44, Depth of quantum circuit: 2
+
+permutation_pad - permutation number: 44, dictionary:
+{0: '00', 1: '10', 2: '11', 3: '01'}
+permutation pad - Elapsed time: 0:00:05.813980
+
+permutation pad - Permutation number: 45, Depth of quantum circuit: 2
+
+permutation_pad - permutation number: 45, dictionary:
+{0: '01', 1: '00', 2: '10', 3: '11'}
+permutation pad - Elapsed time: 0:00:05.932475
+
+permutation pad - Permutation number: 46, Depth of quantum circuit: 2
+
+permutation_pad - permutation number: 46, dictionary:
+{0: '00', 1: '11', 2: '01', 3: '10'}
+permutation pad - Elapsed time: 0:00:06.043773
+
+permutation pad - Permutation number: 47, Depth of quantum circuit: 1
+
+permutation_pad - permutation number: 47, dictionary:
+{0: '11', 1: '01', 2: '10', 3: '00'}
+permutation pad - Elapsed time: 0:00:06.162899
+
+permutation pad - Permutation number: 48, Depth of quantum circuit: 2
+
+permutation_pad - permutation number: 48, dictionary:
+{0: '10', 1: '01', 2: '00', 3: '11'}
+permutation pad - Elapsed time: 0:00:06.266042
+
+permutation pad - Permutation number: 49, Depth of quantum circuit: 3
+
+permutation_pad - permutation number: 49, dictionary:
+{0: '11', 1: '00', 2: '01', 3: '10'}
+permutation pad - Elapsed time: 0:00:06.393193
+
+permutation pad - Permutation number: 50, Depth of quantum circuit: 2
+
+permutation_pad - permutation number: 50, dictionary:
+{0: '00', 1: '11', 2: '01', 3: '10'}
+permutation pad - Elapsed time: 0:00:06.499793
+
+permutation pad - Permutation number: 51, Depth of quantum circuit: 2
+
+permutation_pad - permutation number: 51, dictionary:
+{0: '00', 1: '11', 2: '01', 3: '10'}
+permutation pad - Elapsed time: 0:00:06.595280
+
+permutation pad - Permutation number: 52, Depth of quantum circuit: 2
+
+permutation_pad - permutation number: 52, dictionary:
+{0: '00', 1: '10', 2: '11', 3: '01'}
+permutation pad - Elapsed time: 0:00:06.720949
+
+permutation pad - Permutation number: 53, Depth of quantum circuit: 2
+
+permutation_pad - permutation number: 53, dictionary:
+{0: '00', 1: '11', 2: '01', 3: '10'}
+permutation pad - Elapsed time: 0:00:06.860189
+
+permutation pad - Permutation number: 54, Depth of quantum circuit: 1
+
+permutation_pad - permutation number: 54, dictionary:
+{0: '10', 1: '01', 2: '00', 3: '11'}
+permutation pad - Elapsed time: 0:00:06.977519
+
+permutation pad - Permutation number: 55, Depth of quantum circuit: 1
+
+permutation_pad - permutation number: 55, dictionary:
+{0: '00', 1: '10', 2: '01', 3: '11'}
+permutation pad - Elapsed time: 0:00:07.086888
+permutation pad - Length of Permutation_Pad: 56
+
+
+decrypt - Length of cipher text in bits retrieved from param dictionary: 128
+
+decrypt - First 192 bits in ciphertext string
+10100111010110000000111101001111001011011011111010111110110001101011110001110011011100000110101000011110001110000000100111000000
+decrypt - Length of ciphertext:  128
+decrypt - Remainder of dividing (Length of cipher chunks) by (Job trigger): 0
+
+decrypt - x : 0,  Permutation_Pad[47], State vector: 10, Most frequent: 10
+decrypt - Elapsed time for decryption: 0:00:00.000093
+decrypt - x : 1,  Permutation_Pad[40], State vector: 10, Most frequent: 11
+decrypt - Elapsed time for decryption: 0:00:00.000119
+decrypt - x : 2,  Permutation_Pad[23], State vector: 01, Most frequent: 11
+decrypt - Elapsed time for decryption: 0:00:00.000138
+decrypt - x : 3,  Permutation_Pad[10], State vector: 11, Most frequent: 10
+decrypt - Elapsed time for decryption: 0:00:00.000155
+decrypt - x : 4,  Permutation_Pad[24], State vector: 01, Most frequent: 11
+decrypt - Elapsed time for decryption: 0:00:00.000170
+decrypt - x : 5,  Permutation_Pad[2], State vector: 01, Most frequent: 00
+decrypt - Elapsed time for decryption: 0:00:00.000186
+decrypt - x : 6,  Permutation_Pad[40], State vector: 10, Most frequent: 11
+decrypt - Elapsed time for decryption: 0:00:00.000199
+decrypt - x : 7,  Permutation_Pad[7], State vector: 00, Most frequent: 01
+decrypt - Elapsed time for decryption: 0:00:00.000213
+decrypt - x : 8,  Permutation_Pad[25], State vector: 00, Most frequent: 11
+decrypt - Elapsed time for decryption: 0:00:00.000227
+decrypt - x : 9,  Permutation_Pad[0], State vector: 00, Most frequent: 00
+decrypt - Elapsed time for decryption: 0:00:00.000241
+decrypt - x : 10,  Permutation_Pad[13], State vector: 11, Most frequent: 10
+decrypt - Elapsed time for decryption: 0:00:00.000255
+decrypt - x : 11,  Permutation_Pad[9], State vector: 11, Most frequent: 10
+decrypt - Elapsed time for decryption: 0:00:00.000269
+decrypt - x : 12,  Permutation_Pad[16], State vector: 01, Most frequent: 00
+decrypt - Elapsed time for decryption: 0:00:00.000284
+decrypt - x : 13,  Permutation_Pad[46], State vector: 00, Most frequent: 00
+decrypt - Elapsed time for decryption: 0:00:00.000297
+decrypt - x : 14,  Permutation_Pad[8], State vector: 11, Most frequent: 01
+decrypt - Elapsed time for decryption: 0:00:00.000311
+decrypt - x : 15,  Permutation_Pad[26], State vector: 11, Most frequent: 10
+decrypt - Elapsed time for decryption: 0:00:00.000323
+decrypt - x : 16,  Permutation_Pad[1], State vector: 00, Most frequent: 10
+decrypt - Elapsed time for decryption: 0:00:00.000336
+decrypt - x : 17,  Permutation_Pad[29], State vector: 10, Most frequent: 10
+decrypt - Elapsed time for decryption: 0:00:00.000349
+decrypt - x : 18,  Permutation_Pad[40], State vector: 11, Most frequent: 10
+decrypt - Elapsed time for decryption: 0:00:00.000362
+decrypt - x : 19,  Permutation_Pad[7], State vector: 01, Most frequent: 10
+decrypt - Elapsed time for decryption: 0:00:00.000374
+decrypt - x : 20,  Permutation_Pad[55], State vector: 10, Most frequent: 01
+decrypt - Elapsed time for decryption: 0:00:00.000386
+decrypt - x : 21,  Permutation_Pad[34], State vector: 11, Most frequent: 10
+decrypt - Elapsed time for decryption: 0:00:00.000430
+decrypt - x : 22,  Permutation_Pad[49], State vector: 11, Most frequent: 10
+decrypt - Elapsed time for decryption: 0:00:00.000452
+decrypt - x : 23,  Permutation_Pad[19], State vector: 10, Most frequent: 11
+decrypt - Elapsed time for decryption: 0:00:00.000470
+decrypt - x : 24,  Permutation_Pad[49], State vector: 10, Most frequent: 01
+decrypt - Elapsed time for decryption: 0:00:00.000485
+decrypt - x : 25,  Permutation_Pad[11], State vector: 11, Most frequent: 10
+decrypt - Elapsed time for decryption: 0:00:00.000501
+decrypt - x : 26,  Permutation_Pad[0], State vector: 11, Most frequent: 01
+decrypt - Elapsed time for decryption: 0:00:00.000517
+decrypt - x : 27,  Permutation_Pad[1], State vector: 10, Most frequent: 11
+decrypt - Elapsed time for decryption: 0:00:00.000531
+decrypt - x : 28,  Permutation_Pad[15], State vector: 11, Most frequent: 11
+decrypt - Elapsed time for decryption: 0:00:00.000566
+decrypt - x : 29,  Permutation_Pad[43], State vector: 00, Most frequent: 10
+decrypt - Elapsed time for decryption: 0:00:00.000583
+decrypt - x : 30,  Permutation_Pad[46], State vector: 01, Most frequent: 11
+decrypt - Elapsed time for decryption: 0:00:00.000597
+decrypt - x : 31,  Permutation_Pad[32], State vector: 10, Most frequent: 11
+decrypt - Elapsed time for decryption: 0:00:00.000612
+decrypt - x : 32,  Permutation_Pad[4], State vector: 10, Most frequent: 01
+decrypt - Elapsed time for decryption: 0:00:00.000627
+decrypt - x : 33,  Permutation_Pad[29], State vector: 11, Most frequent: 00
+decrypt - Elapsed time for decryption: 0:00:00.000641
+decrypt - x : 34,  Permutation_Pad[50], State vector: 11, Most frequent: 10
+decrypt - Elapsed time for decryption: 0:00:00.000656
+decrypt - x : 35,  Permutation_Pad[45], State vector: 00, Most frequent: 01
+decrypt - Elapsed time for decryption: 0:00:00.000671
+decrypt - x : 36,  Permutation_Pad[5], State vector: 01, Most frequent: 00
+decrypt - Elapsed time for decryption: 0:00:00.000686
+decrypt - x : 37,  Permutation_Pad[2], State vector: 11, Most frequent: 10
+decrypt - Elapsed time for decryption: 0:00:00.000700
+decrypt - x : 38,  Permutation_Pad[16], State vector: 00, Most frequent: 11
+decrypt - Elapsed time for decryption: 0:00:00.000713
+decrypt - x : 39,  Permutation_Pad[24], State vector: 11, Most frequent: 01
+decrypt - Elapsed time for decryption: 0:00:00.000727
+decrypt - x : 40,  Permutation_Pad[0], State vector: 01, Most frequent: 11
+decrypt - Elapsed time for decryption: 0:00:00.000741
+decrypt - x : 41,  Permutation_Pad[10], State vector: 11, Most frequent: 10
+decrypt - Elapsed time for decryption: 0:00:00.000755
+decrypt - x : 42,  Permutation_Pad[50], State vector: 00, Most frequent: 00
+decrypt - Elapsed time for decryption: 0:00:00.000769
+decrypt - x : 43,  Permutation_Pad[48], State vector: 00, Most frequent: 10
+decrypt - Elapsed time for decryption: 0:00:00.000783
+decrypt - x : 44,  Permutation_Pad[8], State vector: 01, Most frequent: 00
+decrypt - Elapsed time for decryption: 0:00:00.000798
+decrypt - x : 45,  Permutation_Pad[12], State vector: 10, Most frequent: 11
+decrypt - Elapsed time for decryption: 0:00:00.000812
+decrypt - x : 46,  Permutation_Pad[42], State vector: 10, Most frequent: 10
+decrypt - Elapsed time for decryption: 0:00:00.000827
+decrypt - x : 47,  Permutation_Pad[22], State vector: 10, Most frequent: 10
+decrypt - Elapsed time for decryption: 0:00:00.000842
+decrypt - x : 48,  Permutation_Pad[47], State vector: 00, Most frequent: 11
+decrypt - Elapsed time for decryption: 0:00:00.000855
+decrypt - x : 49,  Permutation_Pad[21], State vector: 01, Most frequent: 11
+decrypt - Elapsed time for decryption: 0:00:00.000869
+decrypt - x : 50,  Permutation_Pad[0], State vector: 11, Most frequent: 01
+decrypt - Elapsed time for decryption: 0:00:00.000882
+decrypt - x : 51,  Permutation_Pad[5], State vector: 10, Most frequent: 01
+decrypt - Elapsed time for decryption: 0:00:00.000896
+decrypt - x : 52,  Permutation_Pad[18], State vector: 00, Most frequent: 10
+decrypt - Elapsed time for decryption: 0:00:00.000910
+decrypt - x : 53,  Permutation_Pad[22], State vector: 11, Most frequent: 01
+decrypt - Elapsed time for decryption: 0:00:00.000924
+decrypt - x : 54,  Permutation_Pad[54], State vector: 10, Most frequent: 00
+decrypt - Elapsed time for decryption: 0:00:00.000937
+decrypt - x : 55,  Permutation_Pad[52], State vector: 00, Most frequent: 00
+decrypt - Elapsed time for decryption: 0:00:00.000951
+decrypt - x : 56,  Permutation_Pad[46], State vector: 00, Most frequent: 00
+decrypt - Elapsed time for decryption: 0:00:00.000965
+decrypt - x : 57,  Permutation_Pad[53], State vector: 00, Most frequent: 00
+decrypt - Elapsed time for decryption: 0:00:00.000979
+decrypt - x : 58,  Permutation_Pad[4], State vector: 10, Most frequent: 01
+decrypt - Elapsed time for decryption: 0:00:00.000992
+decrypt - x : 59,  Permutation_Pad[21], State vector: 01, Most frequent: 11
+decrypt - Elapsed time for decryption: 0:00:00.001016
+decrypt - x : 60,  Permutation_Pad[3], State vector: 11, Most frequent: 11
+decrypt - Elapsed time for decryption: 0:00:00.001032
+decrypt - x : 61,  Permutation_Pad[47], State vector: 00, Most frequent: 11
+decrypt - Elapsed time for decryption: 0:00:00.001082
+decrypt - x : 62,  Permutation_Pad[31], State vector: 00, Most frequent: 11
+decrypt - Elapsed time for decryption: 0:00:00.001096
+decrypt - x : 63,  Permutation_Pad[24], State vector: 00, Most frequent: 10
+decrypt - Elapsed time for decryption: 0:00:00.001110
+
+decrypt - Length of decrypted message in bits: 128
+
+decrypt - Elapsed time for decryption of ciphertext: 0:00:00.001173
+bitstring_to_file - Decrypted file name: Decrypted_Hello.txt
+
+bitstring_to_file - decrypted message in bytes trimmed to true length 7
+
+bitstring_to_file - First 192 bits in message, shown grouped by 16 bits
+0000000001001000 0000000001100101 0000000001101100 0000000001101100 0000000001101111 0000000000100000 1111000001001010
+
+bitstring_to_file - First 100 decrypted integers representing the Unicode characters with two bytes
+[72, 101, 108, 108, 111, 32, 61514]
+
+bitstring_to_file - First 100 decrypted characters in file Decrypted_Hello.txt
+Hello 
+
+bitstring_to_file - Last 192 bits in message, shown grouped by 16 bits
+0000000001001000 0000000001100101 0000000001101100 0000000001101100 0000000001101111 0000000000100000 1111000001001010
+
+bitstring_to_file - Last 100 decrypted integers representing the Unicode characters with two bytes
+[72, 101, 108, 108, 111, 32, 61514]
+
+bitstring_to_file - Last 100 decrypted characters in file Decrypted_Hello.txt
+Hello 
