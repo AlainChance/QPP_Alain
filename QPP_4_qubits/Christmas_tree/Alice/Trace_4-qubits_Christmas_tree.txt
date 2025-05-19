@@ -1,0 +1,105 @@
+
+Set n, possible number of quantum states = 2**num_of_qubits: 16
+
+backend = AerSimulator(method='statevector')
+
+parameters - Secret key file name: Secret_key_4-qubits_Christmas_tree.txt
+
+parameters - Secret key created and stored into file:  100000101001101101010010110000101001011101001101110011001010110111101101001011000111001000010111011100111000001100001110001111011101100000110001110001000010001001010101110111100001100010000000111000100110000001010101100101111110110011110001011000011010000110000001000010101110010011111111000111000111001010111100100101010010111010110010001110011000100011011101101010000110011010100110
+
+parameters - Set bits_in_block = num_of_bits / num_of_perm_in_pad: 64
+
+parameters - Length of key chunks (bits_in_block/num_of_qubits): 16
+QPP_param_file: QPP_param.json
+plaintext_file: Christmas_tree.png
+trace: 1
+job_trigger: 1195
+print_trigger: 1195
+draw_circuit: True
+do_sampler: True
+version: V1
+service: None
+backend: None
+opt_level, optimisation level for transpile: 1
+resilience_level: 1
+n, possible number of quantum states: 16
+num_of_bits, classical key length (bit): 384
+bits_in_block: 64
+num_of_qubits: 4
+num_of_perm_in_pad, number of permutations gates in pad: 6
+pad_selection_key_size: 6
+file_to_bitstring - Plaintext file Christmas_tree.png is an image
+
+file_to_bitstring - Length of image in bytes: 12758
+
+file_to_bitstring - First 100 bytes
+b'\x89PNG\r\n\x1a\n\x00\x00\x00\rIHDR\x00\x00\x02Q\x00\x00\x02K\x08\x03\x00\x00\x00\xf0\xef3\x11\x00\x00\x02\xdfPLTE\xff\xff\xff\xef\xef\xef\x00\x00\x00\x00\x06\x00\x00\t\x00\x00\x13\x00\x00\x19\x00\x00\x1c\x00\x00&\x00\x00/\x00\x009\x00\x00B\x00\x00L\x00\x00O\x00\x00R\x00\x00V\x00\x00Y\x00\x00_\x00\x00f\x00\x00i'
+
+file_to_bitstring - Last 100 bytes
+b'\xff\xb2\xa0\xa3*\x94\x04\xec\xa9U\xad\t\xfa\xf3\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00Z\x82\xff\x0fV\xbds5\xf8w\xd8\xa9\x00\x00\x00\x00IEND\xaeB`\x82'
+
+file_to_bitstring - First 192 bits in message, shown grouped by 8 bits
+10001001 01010000 01001110 01000111 00001101 00001010 00011010 00001010 00000000 00000000 00000000 00001101 01001001 01001000 01000100 01010010 00000000 00000000 00000010 01010001 00000000 000
+
+file_to_bitstring - Last 192 bits in message, shown grouped by 8 bits
+111 00001111 01010110 10111101 01110011 00110101 11111000 01110111 11011000 10101001 00000000 00000000 00000000 00000000 01001001 01000101 01001110 01000100 10101110 01000010 01100000 10000010
+
+permutation_pad
+permutation pad - Length of Permutation_Pad: 6
+
+encrypt - Length of message in bits:  102064
+encrypt - Length of randomized message:  102064
+encrypt - Length of message chunks: 25516
+encrypt - Remainder of dividing (Length of message chunks) by (Job trigger): 421
+
+encrypt - x : 1194,  Permutation_Pad[0], State vector: 0101, Most frequent: 1001
+encrypt - Elapsed time: 0:00:00.000382
+encrypt - x : 2389,  Permutation_Pad[5], State vector: 1110, Most frequent: 1010
+encrypt - Elapsed time: 0:00:00.000716
+encrypt - x : 3584,  Permutation_Pad[2], State vector: 1010, Most frequent: 1101
+encrypt - Elapsed time: 0:00:00.004194
+encrypt - x : 4779,  Permutation_Pad[1], State vector: 1011, Most frequent: 1001
+encrypt - Elapsed time: 0:00:00.004538
+encrypt - x : 5974,  Permutation_Pad[2], State vector: 0010, Most frequent: 0111
+encrypt - Elapsed time: 0:00:00.004864
+encrypt - x : 7169,  Permutation_Pad[5], State vector: 1000, Most frequent: 0010
+encrypt - Elapsed time: 0:00:00.005181
+encrypt - x : 8364,  Permutation_Pad[2], State vector: 0110, Most frequent: 0011
+encrypt - Elapsed time: 0:00:00.005500
+encrypt - x : 9559,  Permutation_Pad[1], State vector: 1000, Most frequent: 1010
+encrypt - Elapsed time: 0:00:00.005819
+encrypt - x : 10754,  Permutation_Pad[3], State vector: 1000, Most frequent: 1110
+encrypt - Elapsed time: 0:00:00.006136
+encrypt - x : 11949,  Permutation_Pad[4], State vector: 0111, Most frequent: 0011
+encrypt - Elapsed time: 0:00:00.006519
+encrypt - x : 13144,  Permutation_Pad[1], State vector: 0100, Most frequent: 0111
+encrypt - Elapsed time: 0:00:00.006896
+encrypt - x : 14339,  Permutation_Pad[0], State vector: 0100, Most frequent: 1010
+encrypt - Elapsed time: 0:00:00.007244
+encrypt - x : 15534,  Permutation_Pad[1], State vector: 0000, Most frequent: 0011
+encrypt - Elapsed time: 0:00:00.007574
+encrypt - x : 16729,  Permutation_Pad[2], State vector: 1111, Most frequent: 0000
+encrypt - Elapsed time: 0:00:00.007913
+encrypt - x : 17924,  Permutation_Pad[0], State vector: 1100, Most frequent: 0011
+encrypt - Elapsed time: 0:00:00.008243
+encrypt - x : 19119,  Permutation_Pad[3], State vector: 1000, Most frequent: 1110
+encrypt - Elapsed time: 0:00:00.008635
+encrypt - x : 20314,  Permutation_Pad[3], State vector: 0000, Most frequent: 0011
+encrypt - Elapsed time: 0:00:00.011296
+encrypt - x : 21509,  Permutation_Pad[5], State vector: 0010, Most frequent: 0011
+encrypt - Elapsed time: 0:00:00.011680
+encrypt - x : 22704,  Permutation_Pad[1], State vector: 0111, Most frequent: 1000
+encrypt - Elapsed time: 0:00:00.012048
+encrypt - x : 23899,  Permutation_Pad[3], State vector: 0000, Most frequent: 0011
+encrypt - Elapsed time: 0:00:00.012411
+encrypt - x : 25094,  Permutation_Pad[5], State vector: 0101, Most frequent: 1001
+encrypt - Elapsed time: 0:00:00.012861
+
+encrypt - Elapsed time for encryption of message: 0:00:00.013007
+
+encrypt - Length of ciphertext in bits stored into QPP_param.json:  102064
+
+encrypt - First 192 bits in ciphertext string:
+ 111111011001110100101000001000101100011001110111110011011101011011001100011100100111001101000100000111011001001001111000111101101100101100011010000000110111000110011001111110110100011000000010
+
+ciphertext_to_binary - Ciphertext file name: ciphertext_Christmas_tree.bin
