@@ -1,0 +1,102 @@
+
+Version set to: V1
+
+Set n, possible number of quantum states = 2**num_of_qubits: 16
+
+backend = AerSimulator(method='statevector')
+
+parameters - Secret key file name: Secret_key_4-qubits_Christmas_tree.txt
+
+parameters - Secret key retrieved from file:  100000101001101101010010110000101001011101001101110011001010110111101101001011000111001000010111011100111000001100001110001111011101100000110001110001000010001001010101110111100001100010000000111000100110000001010101100101111110110011110001011000011010000110000001000010101110010011111111000111000111001010111100100101010010111010110010001110011000100011011101101010000110011010100110
+
+parameters - Set bits_in_block = num_of_bits / num_of_perm_in_pad: 64
+
+parameters - Length of key chunks (bits_in_block/num_of_qubits): 16
+QPP_param_file: QPP_param.json
+plaintext_file: Christmas_tree.png
+trace: 1
+job_trigger: 1195
+print_trigger: 1195
+draw_circuit: True
+do_sampler: True
+version: V1
+service: None
+backend: None
+opt_level, optimisation level for transpile: 1
+resilience_level: 1
+n, possible number of quantum states: 16
+num_of_bits, classical key length (bit): 384
+bits_in_block: 64
+num_of_qubits: 4
+num_of_perm_in_pad, number of permutations gates in pad: 6
+pad_selection_key_size: 6
+binary_to_ciphertext - Ciphertext file name: ciphertext_Christmas_tree.bin
+
+permutation_pad
+permutation pad - Length of Permutation_Pad: 6
+
+
+decrypt - Length of cipher text in bits retrieved from param dictionary: 102064
+
+decrypt - First 192 bits in ciphertext string
+111111011001110100101000001000101100011001110111110011011101011011001100011100100111001101000100000111011001001001111000111101101100101100011010000000110111000110011001111110110100011000000010
+decrypt - Length of ciphertext:  102064
+decrypt - Remainder of dividing (Length of cipher chunks) by (Job trigger): 421
+
+decrypt - x : 1194,  Permutation_Pad[0], State vector: 1001, Most frequent: 0101
+decrypt - Elapsed time for decryption: 0:00:00.000453
+decrypt - x : 2389,  Permutation_Pad[5], State vector: 1010, Most frequent: 1110
+decrypt - Elapsed time for decryption: 0:00:00.000749
+decrypt - x : 3584,  Permutation_Pad[2], State vector: 1101, Most frequent: 1010
+decrypt - Elapsed time for decryption: 0:00:00.001033
+decrypt - x : 4779,  Permutation_Pad[1], State vector: 1001, Most frequent: 1011
+decrypt - Elapsed time for decryption: 0:00:00.001317
+decrypt - x : 5974,  Permutation_Pad[2], State vector: 0111, Most frequent: 0010
+decrypt - Elapsed time for decryption: 0:00:00.001595
+decrypt - x : 7169,  Permutation_Pad[5], State vector: 0010, Most frequent: 1000
+decrypt - Elapsed time for decryption: 0:00:00.001870
+decrypt - x : 8364,  Permutation_Pad[2], State vector: 0011, Most frequent: 0110
+decrypt - Elapsed time for decryption: 0:00:00.002164
+decrypt - x : 9559,  Permutation_Pad[1], State vector: 1010, Most frequent: 1000
+decrypt - Elapsed time for decryption: 0:00:00.002474
+decrypt - x : 10754,  Permutation_Pad[3], State vector: 1110, Most frequent: 1000
+decrypt - Elapsed time for decryption: 0:00:00.002768
+decrypt - x : 11949,  Permutation_Pad[4], State vector: 0011, Most frequent: 0111
+decrypt - Elapsed time for decryption: 0:00:00.003058
+decrypt - x : 13144,  Permutation_Pad[1], State vector: 0111, Most frequent: 0100
+decrypt - Elapsed time for decryption: 0:00:00.003350
+decrypt - x : 14339,  Permutation_Pad[0], State vector: 1010, Most frequent: 0100
+decrypt - Elapsed time for decryption: 0:00:00.003639
+decrypt - x : 15534,  Permutation_Pad[1], State vector: 0011, Most frequent: 0000
+decrypt - Elapsed time for decryption: 0:00:00.003928
+decrypt - x : 16729,  Permutation_Pad[2], State vector: 0000, Most frequent: 1111
+decrypt - Elapsed time for decryption: 0:00:00.004284
+decrypt - x : 17924,  Permutation_Pad[0], State vector: 0011, Most frequent: 1100
+decrypt - Elapsed time for decryption: 0:00:00.004628
+decrypt - x : 19119,  Permutation_Pad[3], State vector: 1110, Most frequent: 1000
+decrypt - Elapsed time for decryption: 0:00:00.005005
+decrypt - x : 20314,  Permutation_Pad[3], State vector: 0011, Most frequent: 0000
+decrypt - Elapsed time for decryption: 0:00:00.005367
+decrypt - x : 21509,  Permutation_Pad[5], State vector: 0011, Most frequent: 0010
+decrypt - Elapsed time for decryption: 0:00:00.005709
+decrypt - x : 22704,  Permutation_Pad[1], State vector: 1000, Most frequent: 0111
+decrypt - Elapsed time for decryption: 0:00:00.006040
+decrypt - x : 23899,  Permutation_Pad[3], State vector: 0011, Most frequent: 0000
+decrypt - Elapsed time for decryption: 0:00:00.006451
+decrypt - x : 25094,  Permutation_Pad[5], State vector: 1001, Most frequent: 0101
+decrypt - Elapsed time for decryption: 0:00:00.006845
+
+decrypt - Length of decrypted message in bits: 102064
+
+decrypt - Elapsed time for decryption of ciphertext: 0:00:00.050730
+bitstring_to_file - Decrypted file name: Decrypted_Christmas_tree.png
+
+bitstring_to_file - decrypted message in bytes trimmed to true length: 12758
+
+bitstring_to_file - Length of image in bytes: 12758
+
+bitstring_to_file - First 192 bits in decrypted message, shown grouped by 8 bits
+10001001 01010000 01001110 01000111 00001101 00001010 00011010 00001010 00000000 00000000 00000000 00001101 01001001 01001000 01000100 01010010 00000000 00000000 00000010 01010001 00000000 000
+
+bitstring_to_file - Last 192 bits in decrypted message, shown grouped by 8 bits
+111 00001111 01010110 10111101 01110011 00110101 11111000 01110111 11011000 10101001 00000000 00000000 00000000 00000000 01001001 01000101 01001110 01000100 10101110 01000010 01100000 10000010
