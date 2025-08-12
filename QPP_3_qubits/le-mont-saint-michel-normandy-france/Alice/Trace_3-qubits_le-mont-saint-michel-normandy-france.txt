@@ -1,0 +1,117 @@
+
+Set n, possible number of quantum states = 2**num_of_qubits: 8
+
+The least busy device: <IBMBackend('ibm_brisbane')>
+
+parameters - Secret key file name: Secret_key_3-qubits_le-mont-saint-michel-normandy-france.txt
+
+parameters - Secret key created and stored into file:  010011000001110001011100101011010001000111010110100100011011110100011011100011000110011001001111110001110001100101100000111110000011010110011111101110010001011111001100101100111001101001010100110101001000100011110101110111010101000000011011100001000101111001010000100111011010111011101010010000000111000110011010011101011111111111000001011110011100001011101100011111010101010110101100100111001000101100100110
+
+parameters - Set bits_in_block = num_of_bits / num_of_perm_in_pad: 408
+
+parameters - Length of key chunks (bits_in_block/num_of_qubits): 136
+QPP_param_file: QPP_param.json
+plaintext_file: le-mont-saint-michel-normandy-france.jpg
+trace: 1
+job_trigger: 143710
+print_trigger: 143710
+draw_circuit: True
+do_sampler: True
+version: V1
+service: <QiskitRuntimeService>
+backend: None
+opt_level, optimisation level for transpile: 1
+resilience_level: 1
+n, possible number of quantum states: 8
+num_of_bits, classical key length (bit): 408
+bits_in_block: 408
+num_of_qubits: 3
+num_of_perm_in_pad, number of permutations gates in pad: 1
+pad_selection_key_size: 6
+file_to_bitstring - Plaintext file le-mont-saint-michel-normandy-france.jpg is an image
+
+file_to_bitstring - Length of image in bytes: 1435421
+
+file_to_bitstring - First 100 bytes
+b'\xff\xd8\xff\xe0\x00\x10JFIF\x00\x01\x01\x00\x00\x01\x00\x01\x00\x00\xff\xdb\x00C\x00\x08\x06\x06\x07\x06\x05\x08\x07\x07\x07\t\t\x08\n\x0c\x14\r\x0c\x0b\x0b\x0c\x19\x12\x13\x0f\x14\x1d\x1a\x1f\x1e\x1d\x1a\x1c\x1c $.\' ",#\x1c\x1c(7),01444\x1f\'9=82<.342\xff\xdb\x00C\x01\t\t\t\x0c\x0b\x0c'
+
+file_to_bitstring - Last 100 bytes
+b'\xefN\xed\xd2\x8a(\x18\xa0\xf3@\xa2\x8a\x06(?\x9d8\x02(\xa2\x90\xc7\x03\xcd<\x01\x9c\xd1E \x1c\x0f\x19\xed@99\xa2\x8a\x00\x90{\n\\\x0cu9\xfeTQH`\x08\xe6\x9d\x8c\x9ex\x14QH\x03\xbe(\xc7J(\xa0B\x83\xd3\x9eiz\xf1E\x14\x86;q\x06\x9as\xce(\xa2\x92\x06\x1c\xf44\xd2\x07~\xd4QL\x11\xff\xd9'
+
+file_to_bitstring - Length of image in bits padded with '0': 11483370
+
+file_to_bitstring - First 192 bits in message, shown grouped by 8 bits
+11111111 11011000 11111111 11100000 00000000 00010000 01001010 01000110 01001001 01000110 00000000 00000001 00000001 00000000 00000000 00000001 00000000 00000001 00000000 00000000 11111111 110
+
+file_to_bitstring - Last 192 bits in message, shown grouped by 8 bits
+011 01110001 00000110 10011010 01110011 11001110 00101000 10100010 10010010 00000110 00011100 11110100 00110100 11010010 00000111 01111110 11010100 01010001 01001100 00010001 11111111 11011001
+
+permutation_pad
+permutation pad - Length of Permutation_Pad: 1
+
+encrypt - Length of message in bits:  11483370
+encrypt - Length of randomized message:  11483370
+encrypt - Length of message chunks: 3827790
+encrypt - Remainder of dividing (Length of message chunks) by (Job trigger): 91330
+
+encrypt - x : 143709,  Permutation_Pad[0], State vector: 011, Most frequent: 100
+encrypt - Elapsed time: 0:00:00.016107
+encrypt - x : 287419,  Permutation_Pad[0], State vector: 011, Most frequent: 100
+encrypt - Elapsed time: 0:00:00.032915
+encrypt - x : 431129,  Permutation_Pad[0], State vector: 010, Most frequent: 000
+encrypt - Elapsed time: 0:00:00.048745
+encrypt - x : 574839,  Permutation_Pad[0], State vector: 110, Most frequent: 011
+encrypt - Elapsed time: 0:00:00.065021
+encrypt - x : 718549,  Permutation_Pad[0], State vector: 100, Most frequent: 111
+encrypt - Elapsed time: 0:00:00.081810
+encrypt - x : 862259,  Permutation_Pad[0], State vector: 011, Most frequent: 100
+encrypt - Elapsed time: 0:00:00.099060
+encrypt - x : 1005969,  Permutation_Pad[0], State vector: 100, Most frequent: 111
+encrypt - Elapsed time: 0:00:00.116303
+encrypt - x : 1149679,  Permutation_Pad[0], State vector: 011, Most frequent: 100
+encrypt - Elapsed time: 0:00:00.132723
+encrypt - x : 1293389,  Permutation_Pad[0], State vector: 111, Most frequent: 110
+encrypt - Elapsed time: 0:00:00.149069
+encrypt - x : 1437099,  Permutation_Pad[0], State vector: 101, Most frequent: 001
+encrypt - Elapsed time: 0:00:00.165256
+encrypt - x : 1580809,  Permutation_Pad[0], State vector: 011, Most frequent: 100
+encrypt - Elapsed time: 0:00:00.181525
+encrypt - x : 1724519,  Permutation_Pad[0], State vector: 011, Most frequent: 100
+encrypt - Elapsed time: 0:00:00.197526
+encrypt - x : 1868229,  Permutation_Pad[0], State vector: 101, Most frequent: 001
+encrypt - Elapsed time: 0:00:00.213917
+encrypt - x : 2011939,  Permutation_Pad[0], State vector: 100, Most frequent: 111
+encrypt - Elapsed time: 0:00:00.230333
+encrypt - x : 2155649,  Permutation_Pad[0], State vector: 010, Most frequent: 000
+encrypt - Elapsed time: 0:00:00.246704
+encrypt - x : 2299359,  Permutation_Pad[0], State vector: 001, Most frequent: 101
+encrypt - Elapsed time: 0:00:00.263020
+encrypt - x : 2443069,  Permutation_Pad[0], State vector: 101, Most frequent: 001
+encrypt - Elapsed time: 0:00:00.279837
+encrypt - x : 2586779,  Permutation_Pad[0], State vector: 101, Most frequent: 001
+encrypt - Elapsed time: 0:00:00.295771
+encrypt - x : 2730489,  Permutation_Pad[0], State vector: 110, Most frequent: 011
+encrypt - Elapsed time: 0:00:00.312007
+encrypt - x : 2874199,  Permutation_Pad[0], State vector: 110, Most frequent: 011
+encrypt - Elapsed time: 0:00:00.327914
+encrypt - x : 3017909,  Permutation_Pad[0], State vector: 100, Most frequent: 111
+encrypt - Elapsed time: 0:00:00.343830
+encrypt - x : 3161619,  Permutation_Pad[0], State vector: 010, Most frequent: 000
+encrypt - Elapsed time: 0:00:00.360339
+encrypt - x : 3305329,  Permutation_Pad[0], State vector: 000, Most frequent: 010
+encrypt - Elapsed time: 0:00:00.376931
+encrypt - x : 3449039,  Permutation_Pad[0], State vector: 011, Most frequent: 100
+encrypt - Elapsed time: 0:00:00.402431
+encrypt - x : 3592749,  Permutation_Pad[0], State vector: 111, Most frequent: 110
+encrypt - Elapsed time: 0:00:00.419173
+encrypt - x : 3736459,  Permutation_Pad[0], State vector: 100, Most frequent: 111
+encrypt - Elapsed time: 0:00:00.436014
+
+encrypt - Elapsed time for encryption of message: 0:00:00.446931
+
+encrypt - Length of ciphertext in bits stored into QPP_param.json:  11483370
+
+encrypt - First 192 bits in ciphertext string:
+ 001111110111000000111100000100000101010110010011011011110110001001000000011000111011100101101011011101111101111001111010110011000100000011100011001011000101100111011100100000101101001010000110
+
+ciphertext_to_binary - Ciphertext file name: ciphertext_le-mont-saint-michel-normandy-france.bin
