@@ -1,0 +1,112 @@
+
+Version set to: V1
+
+Set n, possible number of quantum states = 2**num_of_qubits: 8
+
+The least busy device: <IBMBackend('ibm_brisbane')>
+
+parameters - Secret key file name: Secret_key_3-qubits_le-mont-saint-michel-normandy-france.txt
+
+parameters - Secret key retrieved from file:  010011000001110001011100101011010001000111010110100100011011110100011011100011000110011001001111110001110001100101100000111110000011010110011111101110010001011111001100101100111001101001010100110101001000100011110101110111010101000000011011100001000101111001010000100111011010111011101010010000000111000110011010011101011111111111000001011110011100001011101100011111010101010110101100100111001000101100100110
+
+parameters - Set bits_in_block = num_of_bits / num_of_perm_in_pad: 408
+
+parameters - Length of key chunks (bits_in_block/num_of_qubits): 136
+QPP_param_file: QPP_param.json
+plaintext_file: le-mont-saint-michel-normandy-france.jpg
+trace: 1
+job_trigger: 143710
+print_trigger: 143710
+draw_circuit: True
+do_sampler: True
+version: V1
+service: <QiskitRuntimeService>
+backend: None
+opt_level, optimisation level for transpile: 1
+resilience_level: 1
+n, possible number of quantum states: 8
+num_of_bits, classical key length (bit): 408
+bits_in_block: 408
+num_of_qubits: 3
+num_of_perm_in_pad, number of permutations gates in pad: 1
+pad_selection_key_size: 6
+binary_to_ciphertext - Ciphertext file name: ciphertext_le-mont-saint-michel-normandy-france.bin
+
+permutation_pad
+permutation pad - Length of Permutation_Pad: 1
+
+
+decrypt - Length of cipher text in bits retrieved from param dictionary: 11483370
+
+decrypt - First 192 bits in ciphertext string
+001111110111000000111100000100000101010110010011011011110110001001000000011000111011100101101011011101111101111001111010110011000100000011100011001011000101100111011100100000101101001010000110
+decrypt - Length of ciphertext:  11483370
+decrypt - Remainder of dividing (Length of cipher chunks) by (Job trigger): 91330
+
+decrypt - x : 143709,  Permutation_Pad[0], State vector: 100, Most frequent: 011
+decrypt - Elapsed time for decryption: 0:00:00.017644
+decrypt - x : 287419,  Permutation_Pad[0], State vector: 100, Most frequent: 011
+decrypt - Elapsed time for decryption: 0:00:00.035504
+decrypt - x : 431129,  Permutation_Pad[0], State vector: 000, Most frequent: 010
+decrypt - Elapsed time for decryption: 0:00:00.052839
+decrypt - x : 574839,  Permutation_Pad[0], State vector: 011, Most frequent: 110
+decrypt - Elapsed time for decryption: 0:00:00.072600
+decrypt - x : 718549,  Permutation_Pad[0], State vector: 111, Most frequent: 100
+decrypt - Elapsed time for decryption: 0:00:00.090239
+decrypt - x : 862259,  Permutation_Pad[0], State vector: 100, Most frequent: 011
+decrypt - Elapsed time for decryption: 0:00:00.110784
+decrypt - x : 1005969,  Permutation_Pad[0], State vector: 111, Most frequent: 100
+decrypt - Elapsed time for decryption: 0:00:00.129009
+decrypt - x : 1149679,  Permutation_Pad[0], State vector: 100, Most frequent: 011
+decrypt - Elapsed time for decryption: 0:00:00.148952
+decrypt - x : 1293389,  Permutation_Pad[0], State vector: 110, Most frequent: 111
+decrypt - Elapsed time for decryption: 0:00:00.169677
+decrypt - x : 1437099,  Permutation_Pad[0], State vector: 001, Most frequent: 101
+decrypt - Elapsed time for decryption: 0:00:00.187915
+decrypt - x : 1580809,  Permutation_Pad[0], State vector: 100, Most frequent: 011
+decrypt - Elapsed time for decryption: 0:00:00.207463
+decrypt - x : 1724519,  Permutation_Pad[0], State vector: 100, Most frequent: 011
+decrypt - Elapsed time for decryption: 0:00:00.227929
+decrypt - x : 1868229,  Permutation_Pad[0], State vector: 001, Most frequent: 101
+decrypt - Elapsed time for decryption: 0:00:00.245939
+decrypt - x : 2011939,  Permutation_Pad[0], State vector: 111, Most frequent: 100
+decrypt - Elapsed time for decryption: 0:00:00.265608
+decrypt - x : 2155649,  Permutation_Pad[0], State vector: 000, Most frequent: 010
+decrypt - Elapsed time for decryption: 0:00:00.294917
+decrypt - x : 2299359,  Permutation_Pad[0], State vector: 101, Most frequent: 001
+decrypt - Elapsed time for decryption: 0:00:00.313416
+decrypt - x : 2443069,  Permutation_Pad[0], State vector: 001, Most frequent: 101
+decrypt - Elapsed time for decryption: 0:00:00.333141
+decrypt - x : 2586779,  Permutation_Pad[0], State vector: 001, Most frequent: 101
+decrypt - Elapsed time for decryption: 0:00:00.351820
+decrypt - x : 2730489,  Permutation_Pad[0], State vector: 011, Most frequent: 110
+decrypt - Elapsed time for decryption: 0:00:00.369946
+decrypt - x : 2874199,  Permutation_Pad[0], State vector: 011, Most frequent: 110
+decrypt - Elapsed time for decryption: 0:00:00.389951
+decrypt - x : 3017909,  Permutation_Pad[0], State vector: 111, Most frequent: 100
+decrypt - Elapsed time for decryption: 0:00:00.408098
+decrypt - x : 3161619,  Permutation_Pad[0], State vector: 000, Most frequent: 010
+decrypt - Elapsed time for decryption: 0:00:00.428200
+decrypt - x : 3305329,  Permutation_Pad[0], State vector: 010, Most frequent: 000
+decrypt - Elapsed time for decryption: 0:00:00.448112
+decrypt - x : 3449039,  Permutation_Pad[0], State vector: 100, Most frequent: 011
+decrypt - Elapsed time for decryption: 0:00:00.469578
+decrypt - x : 3592749,  Permutation_Pad[0], State vector: 110, Most frequent: 111
+decrypt - Elapsed time for decryption: 0:00:00.487389
+decrypt - x : 3736459,  Permutation_Pad[0], State vector: 111, Most frequent: 100
+decrypt - Elapsed time for decryption: 0:00:00.505504
+
+decrypt - Length of decrypted message in bits: 11483370
+
+decrypt - Elapsed time for decryption of ciphertext: 0:00:02.035659
+bitstring_to_file - Decrypted file name: Decrypted_le-mont-saint-michel-normandy-france.jpg
+
+bitstring_to_file - decrypted message in bytes trimmed to true length: 1435421
+
+bitstring_to_file - Length of image in bytes: 1435421
+
+bitstring_to_file - First 192 bits in decrypted message, shown grouped by 8 bits
+11111111 11011000 11111111 11100000 00000000 00010000 01001010 01000110 01001001 01000110 00000000 00000001 00000001 00000000 00000000 00000001 00000000 00000001 00000000 00000000 11111111 110
+
+bitstring_to_file - Last 192 bits in decrypted message, shown grouped by 8 bits
+011 01110001 00000110 10011010 01110011 11001110 00101000 10100010 10010010 00000110 00011100 11110100 00110100 11010010 00000111 01111110 11010100 01010001 01001100 00010001 11111111 11011000
